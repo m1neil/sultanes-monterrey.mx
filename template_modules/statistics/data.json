@@ -1,0 +1,21 @@
+{
+  "statistics": {
+    "sessions": [
+      {
+        "date": "15.10.2025",
+        "start": 1760515481530,
+        "end": 1760515481530
+      }
+    ],
+    "files": [
+      "style.scss",
+      "settings.scss",
+      "main.html",
+      "index.html",
+      "header.html",
+      "tailwind.css",
+      "menu.html",
+      "menu.scss"
+    ]
+  }
+}

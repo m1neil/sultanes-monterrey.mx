@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+@theme {
+	--color-accent: #f3c148;
+
+	--breakpoint-tablet: 47.9988em;
+	--breakpoint-pc: 91.8738em;
+	--breakpoint-burger: 73.1238em;
+}
