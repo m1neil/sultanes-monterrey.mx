@@ -15,7 +15,9 @@
       "header.html",
       "tailwind.css",
       "menu.html",
-      "menu.scss"
+      "menu.scss",
+      "menu.js",
+      "reset.css"
     ]
   }
 }

@@ -32,6 +32,7 @@
 		[data-fls-menu-open] & {
 			span {
 				width: 0;
+				right: 50%;
 			}
 			&::before,
 			&::after {

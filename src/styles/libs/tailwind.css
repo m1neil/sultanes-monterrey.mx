@@ -3,7 +3,19 @@
 @theme {
 	--color-accent: #f3c148;
 
-	--breakpoint-tablet: 47.9988em;
 	--breakpoint-pc: 91.8738em;
+	--breakpoint-laptop: 61.9988em; /* 991.98px */
+	--breakpoint-tablet: 47.9988em; /* 767.98px */
+	--breakpoint-mobile: 29.9988em; /* 479.98 */
 	--breakpoint-burger: 73.1238em;
+}
+
+@layer utilities {
+	.shadow-header {
+		box-shadow: 0px 1px 20px rgba(255, 255, 255, 0.18);
+	}
+
+	.bg-header-gradient {
+		background: linear-gradient(1deg, rgba(8, 22, 41, 1) 25%, rgba(255, 255, 255, 0.16) 100%);
+	}
 }
