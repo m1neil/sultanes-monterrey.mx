@@ -89,7 +89,7 @@
 						</div>
 						<div class="flex justify-center">
 							<a
-								class="bg-white hover:opacity-80 px-6 py-1.5 border-[5px] border-[#081629]/10 rounded-lg font-bold no-underline uppercase transition-all duration-300 text-[#0A2240]"
+								class="bg-white px-6 py-1.5 border-[5px] border-[#081629]/10 rounded-lg font-bold no-underline uppercase transition-all duration-300 text-[#0A2240] hover:border-accent"
 								href="#">
 								match center
 							</a>
@@ -119,7 +119,7 @@
 						</div>
 						<div class="flex justify-center">
 							<a
-								class="bg-white hover:opacity-80 px-6 py-1.5 border-[5px] border-[#081629]/10 rounded-lg font-bold no-underline uppercase transition-all duration-300 text-[#0A2240]"
+								class="bg-white hover:border-accent px-6 py-1.5 border-[5px] border-[#081629]/10 rounded-lg font-bold no-underline uppercase transition-all duration-300 text-[#0A2240]"
 								href="#">
 								match center
 							</a>
@@ -149,7 +149,7 @@
 						</div>
 						<div class="flex justify-center">
 							<a
-								class="bg-white hover:opacity-80 px-6 py-1.5 border-[5px] border-[#081629]/10 rounded-lg font-bold no-underline uppercase transition-all duration-300 text-[#0A2240]"
+								class="bg-white hover:border-accent px-6 py-1.5 border-[5px] border-[#081629]/10 rounded-lg font-bold no-underline uppercase transition-all duration-300 text-[#0A2240]"
 								href="#">
 								match center
 							</a>
@@ -179,7 +179,7 @@
 						</div>
 						<div class="flex justify-center">
 							<a
-								class="bg-white hover:opacity-80 px-6 py-1.5 border-[5px] border-[#081629]/10 rounded-lg font-bold no-underline uppercase transition-all duration-300 text-[#0A2240]"
+								class="bg-white hover:border-accent px-6 py-1.5 border-[5px] border-[#081629]/10 rounded-lg font-bold no-underline uppercase transition-all duration-300 text-[#0A2240]"
 								href="#">
 								match center
 							</a>
@@ -188,7 +188,7 @@
 				</div>
 				<div class="flex justify-center">
 					<a
-						class="bg-[#081629] hover:opacity-80 text-center max-mobile:w-full px-6 py-1.5 border-[5px] border-white/20 rounded-xl font-bold text-lg no-underline uppercase transition-all duration-300 text-white"
+						class="bg-[#081629] text-center max-mobile:w-full px-6 py-1.5 border-[5px] border-white/20 rounded-xl font-bold text-lg no-underline uppercase transition-all duration-300 text-white hover:border-accent"
 						href="#">
 						view more
 					</a>
@@ -203,29 +203,35 @@
 					<h2
 						class="mb-3 font-bold text-3xl max-tablet:text-[26px] uppercase max-tablet:mb-6">standings</h2>
 					<table class="block not-last:mb-6 overflow-x-auto">
-						<thead class="block max-lg:min-w-[480px]">
+						<thead class="block max-lg:min-w-[490px]">
 							<tr
-								class="border-b-2 border-white uppercase items-center font-bold text-[18px] gap-x-3.5 text-center py-2 grid grid-cols-[50px_minmax(120px,1.5fr)_repeat(4,minmax(50px,0.5fr))]">
+								class="border-b-2 border-white uppercase items-center font-bold text-[18px] gap-x-3.5 text-center py-2 grid grid-cols-[50px_40px_minmax(120px,1.5fr)_repeat(4,minmax(50px,0.5fr))]">
 								<th
 									class="self-stretch flex justify-center items-center sticky left-0 max-lg:after:content-[''] max-lg:after:absolute max-lg:after:top-0 max-lg:after:left-0 max-lg:after:w-full max-lg:after:h-full max-lg:after:bg-[#011f47] max-lg:after:z-[-1]">#</th>
 								<th
-									class="text-left sticky left-[64px] max-lg:after:absolute max-lg:after:top-0 max-lg:after:left-[-14px] max-lg:after:w-[77px] max-lg:after:h-full max-lg:after:bg-[#011f47] max-lg:after:z-[-1]">club</th>
+									class="text-left sticky left-[64px] col-span-2 max-lg:after:absolute max-lg:after:top-0 max-lg:after:left-[-14px] max-lg:after:w-[77px] max-lg:after:h-full max-lg:after:bg-[#011f47] max-lg:after:z-[-1]">club</th>
 								<th>jg</th>
 								<th>jp</th>
 								<th>pct</th>
 								<th>jv</th>
 							</tr>
 						</thead>
-						<tbody class="block max-lg:min-w-[480px]">
+						<tbody class="block max-lg:min-w-[490px]">
 							<tr
-								class="border-b-2 border-white items-center font-bold text-[18px] gap-x-3.5 text-center py-2 grid grid-cols-[50px_minmax(120px,1.5fr)_repeat(4,minmax(50px,0.5fr))]">
+								class="border-b-2 border-white items-center font-bold text-[18px] gap-x-3.5 text-center py-2 grid grid-cols-[50px_40px_minmax(120px,1.5fr)_repeat(4,minmax(50px,0.5fr))]">
 								<td
-									class="self-stretch flex justify-center items-center sticky left-0 max-lg:after:content-[''] max-lg:after:absolute max-lg:after:top-0 max-lg:after:left-0 max-lg:after:w-full max-lg:after:h-full max-lg:after:bg-[#011f47] max-lg:after:z-[-1]">1</td>
-								<td class="min-w-0">
-									<a
-										class="flex items-center gap-x-2 lg:gap-x-3 no-underline capitalize transition-all duration-300 text-white hover:text-accent"
-										href="#">
+									class="self-stretch flex justify-center left-0 items-center sticky max-lg:after:content-[''] max-lg:after:absolute max-lg:after:top-0 max-lg:after:left-0 max-lg:after:w-full max-lg:after:h-full max-lg:after:bg-[#011f47] max-lg:after:z-[-1]">1</td>
+								<td
+									class="min-w-0 sticky left-[64px] max-lg:after:content-[''] max-lg:after:absolute max-lg:after:top-0 max-lg:after:left-[-14px] max-lg:after:w-[calc(100%+14px)] max-lg:after:h-full max-lg:after:bg-[#011f47] max-lg:after:z-[-1]">
+									<a href="#"
+										class="flex items-center gap-x-2 lg:gap-x-3 no-underline capitalize transition-all duration-300 text-white hover:text-accent">
 										<img src="@img/5a137c3b58d25de0c2000c6425a4916a.png" class="w-10 max-sm:w-8 aspect-[1] object-contain">
+									</a>
+								</td>
+								<td class="min-w-0 self-stretch flex">
+									<a
+										class="flex items-center gap-x-2 lg:gap-x-3 no-underline capitalize transition-all ml-[-54px] pl-[49px] h-full duration-300 text-white hover:text-accent max-sm:pl-[41px] min-w-0"
+										href="#">
 										<h3 class="truncate">sultanes</h3>
 									</a>
 								</td>
@@ -235,14 +241,20 @@
 								<td>-</td>
 							</tr>
 							<tr
-								class="border-b-2 border-white uppercase items-center font-bold text-[18px] gap-x-3.5 text-center py-2 grid grid-cols-[50px_minmax(120px,1.5fr)_repeat(4,minmax(50px,0.5fr))]">
+								class="border-b-2 border-white uppercase items-center font-bold text-[18px] gap-x-3.5 text-center py-2 grid grid-cols-[50px_40px_minmax(120px,1.5fr)_repeat(4,minmax(50px,0.5fr))]">
 								<td
 									class="self-stretch flex justify-center items-center sticky left-0 max-lg:after:content-[''] max-lg:after:absolute max-lg:after:top-0 max-lg:after:left-0 max-lg:after:w-full max-lg:after:h-full max-lg:after:bg-[#011f47] max-lg:after:z-[-1]">2</td>
-								<td class="min-w-0">
-									<a
-										class="flex items-center gap-x-2 lg:gap-x-3  no-underline capitalize transition-all duration-300 text-white hover:text-accent"
-										href="#">
+								<td
+									class="min-w-0 sticky left-[64px] max-lg:after:content-[''] max-lg:after:absolute max-lg:after:top-0 max-lg:after:left-[-14px] max-lg:after:w-[calc(100%+14px)] max-lg:after:h-full max-lg:after:bg-[#011f47] max-lg:after:z-[-1]">
+									<a href="#"
+										class="flex items-center gap-x-2 lg:gap-x-3 no-underline capitalize transition-all duration-300 text-white hover:text-accent">
 										<img src="@img/3218c320f39786c4fcf276f46ce7d346.png" class="w-10 max-sm:w-8 aspect-[1] object-contain">
+									</a>
+								</td>
+								<td class="min-w-0 self-stretch flex">
+									<a
+										class="flex items-center gap-x-2 lg:gap-x-3 no-underline capitalize transition-all ml-[-54px] pl-[49px] h-full duration-300 text-white hover:text-accent max-sm:pl-[41px] min-w-0"
+										href="#">
 										<h3 class="truncate">toros</h3>
 									</a>
 								</td>
@@ -252,14 +264,20 @@
 								<td>2.0</td>
 							</tr>
 							<tr
-								class="border-b-2 border-white uppercase items-center font-bold text-[18px] gap-x-3.5 text-center py-2 grid grid-cols-[50px_minmax(120px,1.5fr)_repeat(4,minmax(50px,0.5fr))]">
+								class="border-b-2 border-white uppercase items-center font-bold text-[18px] gap-x-3.5 text-center py-2 grid grid-cols-[50px_40px_minmax(120px,1.5fr)_repeat(4,minmax(50px,0.5fr))]">
 								<td
 									class="self-stretch flex justify-center items-center sticky left-0 max-lg:after:content-[''] max-lg:after:absolute max-lg:after:top-0 max-lg:after:left-0 max-lg:after:w-full max-lg:after:h-full max-lg:after:bg-[#011f47] max-lg:after:z-[-1]">3</td>
-								<td class="min-w-0">
-									<a
-										class="flex items-center gap-x-2 lg:gap-x-3  no-underline capitalize transition-all duration-300 text-white hover:text-accent"
-										href="#">
+								<td
+									class="min-w-0 sticky left-[64px] max-lg:after:content-[''] max-lg:after:absolute max-lg:after:top-0 max-lg:after:left-[-14px] max-lg:after:w-[calc(100%+14px)] max-lg:after:h-full max-lg:after:bg-[#011f47] max-lg:after:z-[-1]">
+									<a href="#"
+										class="flex items-center gap-x-2 lg:gap-x-3 no-underline capitalize transition-all duration-300 text-white hover:text-accent">
 										<img src="@img/ea6c6c0f7f80378060d31415bf573d94.png" class="w-10 max-sm:w-8 aspect-[1] object-contain">
+									</a>
+								</td>
+								<td class="min-w-0 self-stretch flex">
+									<a
+										class="flex items-center gap-x-2 lg:gap-x-3 no-underline capitalize transition-all ml-[-54px] pl-[49px] h-full duration-300 text-white hover:text-accent max-sm:pl-[41px] min-w-0"
+										href="#">
 										<h3 class="truncate">acereros</h3>
 									</a>
 								</td>
@@ -269,14 +287,20 @@
 								<td>5.0</td>
 							</tr>
 							<tr
-								class="border-b-2 border-white uppercase items-center font-bold text-[18px] gap-x-3.5 text-center py-2 grid grid-cols-[50px_minmax(120px,1.5fr)_repeat(4,minmax(50px,0.5fr))]">
+								class="border-b-2 border-white uppercase items-center font-bold text-[18px] gap-x-3.5 text-center py-2 grid grid-cols-[50px_40px_minmax(120px,1.5fr)_repeat(4,minmax(50px,0.5fr))]">
 								<td
 									class="self-stretch flex justify-center items-center sticky left-0 max-lg:after:content-[''] max-lg:after:absolute max-lg:after:top-0 max-lg:after:left-0 max-lg:after:w-full max-lg:after:h-full max-lg:after:bg-[#011f47] max-lg:after:z-[-1]">4</td>
-								<td class="min-w-0">
-									<a
-										class="flex items-center gap-x-2 lg:gap-x-3  no-underline capitalize transition-all duration-300 text-white hover:text-accent"
-										href="#">
+								<td
+									class="min-w-0 sticky left-[64px] max-lg:after:content-[''] max-lg:after:absolute max-lg:after:top-0 max-lg:after:left-[-14px] max-lg:after:w-[calc(100%+14px)] max-lg:after:h-full max-lg:after:bg-[#011f47] max-lg:after:z-[-1]">
+									<a href="#"
+										class="flex items-center gap-x-2 lg:gap-x-3 no-underline capitalize transition-all duration-300 text-white hover:text-accent">
 										<img src="@img/4eb8b3955c336e885305edebdaab70cc.png" class="w-10 max-sm:w-8 aspect-[1] object-contain">
+									</a>
+								</td>
+								<td class="min-w-0 self-stretch flex">
+									<a
+										class="flex items-center gap-x-2 lg:gap-x-3 no-underline capitalize transition-all ml-[-54px] pl-[49px] h-full duration-300 text-white hover:text-accent max-sm:pl-[41px] min-w-0"
+										href="#">
 										<h3 class="truncate">sultanes</h3>
 									</a>
 								</td>
@@ -286,14 +310,20 @@
 								<td>5.0</td>
 							</tr>
 							<tr
-								class="border-b-2 border-white uppercase items-center font-bold text-[18px] gap-x-3.5 text-center py-2 grid grid-cols-[50px_minmax(120px,1.5fr)_repeat(4,minmax(50px,0.5fr))]">
+								class="border-b-2 border-white uppercase items-center font-bold text-[18px] gap-x-3.5 text-center py-2 grid grid-cols-[50px_40px_minmax(120px,1.5fr)_repeat(4,minmax(50px,0.5fr))]">
 								<td
 									class="self-stretch flex justify-center items-center sticky left-0 max-lg:after:content-[''] max-lg:after:absolute max-lg:after:top-0 max-lg:after:left-0 max-lg:after:w-full max-lg:after:h-full max-lg:after:bg-[#011f47] max-lg:after:z-[-1]">5</td>
-								<td class="min-w-0">
-									<a
-										class="flex items-center gap-x-2 lg:gap-x-3  no-underline capitalize transition-all duration-300 text-white hover:text-accent"
-										href="#">
+								<td
+									class="min-w-0 sticky left-[64px] max-lg:after:content-[''] max-lg:after:absolute max-lg:after:top-0 max-lg:after:left-[-14px] max-lg:after:w-[calc(100%+14px)] max-lg:after:h-full max-lg:after:bg-[#011f47] max-lg:after:z-[-1]">
+									<a href="#"
+										class="flex items-center gap-x-2 lg:gap-x-3 no-underline capitalize transition-all duration-300 text-white hover:text-accent">
 										<img src="@img/92736c371ed494682f5cc5533b65bbaf.webp" class="w-10 max-sm:w-8 aspect-[1] object-contain">
+									</a>
+								</td>
+								<td class="min-w-0 self-stretch flex">
+									<a
+										class="flex items-center gap-x-2 lg:gap-x-3 no-underline capitalize transition-all ml-[-54px] pl-[49px] h-full duration-300 text-white hover:text-accent max-sm:pl-[41px] min-w-0"
+										href="#">
 										<h3 class="truncate">tecolotes</h3>
 									</a>
 								</td>
@@ -303,14 +333,20 @@
 								<td>5.0</td>
 							</tr>
 							<tr
-								class="border-b-2 border-white uppercase items-center font-bold text-[18px] gap-x-3.5 text-center py-2 grid grid-cols-[50px_minmax(120px,1.5fr)_repeat(4,minmax(50px,0.5fr))]">
+								class="border-b-2 border-white uppercase items-center font-bold text-[18px] gap-x-3.5 text-center py-2 grid grid-cols-[50px_40px_minmax(120px,1.5fr)_repeat(4,minmax(50px,0.5fr))]">
 								<td
 									class="self-stretch flex justify-center items-center sticky left-0 max-lg:after:content-[''] max-lg:after:absolute max-lg:after:top-0 max-lg:after:left-0 max-lg:after:w-full max-lg:after:h-full max-lg:after:bg-[#011f47] max-lg:after:z-[-1]">6</td>
-								<td class="min-w-0">
-									<a
-										class="flex items-center gap-x-2 lg:gap-x-3  no-underline capitalize transition-all duration-300 text-white hover:text-accent"
-										href="#">
+								<td
+									class="min-w-0 sticky left-[64px] max-lg:after:content-[''] max-lg:after:absolute max-lg:after:top-0 max-lg:after:left-[-14px] max-lg:after:w-[calc(100%+14px)] max-lg:after:h-full max-lg:after:bg-[#011f47] max-lg:after:z-[-1]">
+									<a href="#"
+										class="flex items-center gap-x-2 lg:gap-x-3 no-underline capitalize transition-all duration-300 text-white hover:text-accent">
 										<img src="@img/fb77b97b09b94776b4ea76eea1a437c9.png" class="w-10 max-sm:w-8 aspect-[1] object-contain">
+									</a>
+								</td>
+								<td class="min-w-0 self-stretch flex">
+									<a
+										class="flex items-center gap-x-2 lg:gap-x-3 no-underline capitalize transition-all ml-[-54px] pl-[49px] h-full duration-300 text-white hover:text-accent max-sm:pl-[41px] min-w-0"
+										href="#">
 										<h3 class="truncate">charros</h3>
 									</a>
 								</td>
@@ -320,14 +356,20 @@
 								<td>9.</td>
 							</tr>
 							<tr
-								class="border-b-2 border-white uppercase items-center font-bold text-[18px] gap-x-3.5 text-center py-2 grid grid-cols-[50px_minmax(120px,1.5fr)_repeat(4,minmax(50px,0.5fr))]">
+								class="border-b-2 border-white uppercase items-center font-bold text-[18px] gap-x-3.5 text-center py-2 grid grid-cols-[50px_40px_minmax(120px,1.5fr)_repeat(4,minmax(50px,0.5fr))]">
 								<td
 									class="self-stretch flex justify-center items-center sticky left-0 max-lg:after:content-[''] max-lg:after:absolute max-lg:after:top-0 max-lg:after:left-0 max-lg:after:w-full max-lg:after:h-full max-lg:after:bg-[#011f47] max-lg:after:z-[-1]">7</td>
-								<td class="min-w-0">
-									<a
-										class="flex items-center gap-x-2 lg:gap-x-3  no-underline capitalize transition-all duration-300 text-white hover:text-accent"
-										href="#">
+								<td
+									class="min-w-0 sticky left-[64px] max-lg:after:content-[''] max-lg:after:absolute max-lg:after:top-0 max-lg:after:left-[-14px] max-lg:after:w-[calc(100%+14px)] max-lg:after:h-full max-lg:after:bg-[#011f47] max-lg:after:z-[-1]">
+									<a href="#"
+										class="flex items-center gap-x-2 lg:gap-x-3 no-underline capitalize transition-all duration-300 text-white hover:text-accent">
 										<img src="@img/67010760940851c6736aa1facda73c34.png" class="w-10 max-sm:w-8 aspect-[1] object-contain">
+									</a>
+								</td>
+								<td class="min-w-0 self-stretch flex">
+									<a
+										class="flex items-center gap-x-2 lg:gap-x-3 no-underline capitalize transition-all ml-[-54px] pl-[49px] h-full duration-300 text-white hover:text-accent max-sm:pl-[41px] min-w-0"
+										href="#">
 										<h3 class="truncate">saraperos</h3>
 									</a>
 								</td>
@@ -337,14 +379,20 @@
 								<td>9.0</td>
 							</tr>
 							<tr
-								class="border-b-2 border-white uppercase items-center font-bold text-[18px] gap-x-3.5 text-center py-2 grid grid-cols-[50px_minmax(120px,1.5fr)_repeat(4,minmax(50px,0.5fr))]">
+								class="border-b-2 border-white uppercase items-center font-bold text-[18px] gap-x-3.5 text-center py-2 grid grid-cols-[50px_40px_minmax(120px,1.5fr)_repeat(4,minmax(50px,0.5fr))]">
 								<td
 									class="self-stretch flex justify-center items-center sticky left-0 max-lg:after:content-[''] max-lg:after:absolute max-lg:after:top-0 max-lg:after:left-0 max-lg:after:w-full max-lg:after:h-full max-lg:after:bg-[#011f47] max-lg:after:z-[-1]">8</td>
-								<td class="min-w-0">
-									<a
-										class="flex items-center gap-x-2 lg:gap-x-3  no-underline capitalize transition-all duration-300 text-white hover:text-accent"
-										href="#">
+								<td
+									class="min-w-0 sticky left-[64px] max-lg:after:content-[''] max-lg:after:absolute max-lg:after:top-0 max-lg:after:left-[-14px] max-lg:after:w-[calc(100%+14px)] max-lg:after:h-full max-lg:after:bg-[#011f47] max-lg:after:z-[-1]">
+									<a href="#"
+										class="flex items-center gap-x-2 lg:gap-x-3 no-underline capitalize transition-all duration-300 text-white hover:text-accent">
 										<img src="@img/3218c320f39786c4fcf276f46ce7d346.png" class="w-10 max-sm:w-8 aspect-[1] object-contain">
+									</a>
+								</td>
+								<td class="min-w-0 self-stretch flex">
+									<a
+										class="flex items-center gap-x-2 lg:gap-x-3 no-underline capitalize transition-all ml-[-54px] pl-[49px] h-full duration-300 text-white hover:text-accent max-sm:pl-[41px] min-w-0"
+										href="#">
 										<h3 class="truncate">dorados</h3>
 									</a>
 								</td>
@@ -354,21 +402,20 @@
 								<td>12.5</td>
 							</tr>
 							<tr
-								class="border-b-2 border-white uppercase items-center font-bold text-[18px] gap-x-3.5 text-center py-2 grid grid-cols-[50px_minmax(120px,1.5fr)_repeat(4,minmax(50px,0.5fr))]">
+								class="border-b-2 border-white uppercase items-center font-bold text-[18px] gap-x-3.5 text-center py-2 grid grid-cols-[50px_40px_minmax(120px,1.5fr)_repeat(4,minmax(50px,0.5fr))]">
 								<td
 									class="self-stretch flex justify-center items-center sticky left-0 max-lg:after:content-[''] max-lg:after:absolute max-lg:after:top-0 max-lg:after:left-0 max-lg:after:w-full max-lg:after:h-full max-lg:after:bg-[#011f47] max-lg:after:z-[-1]">9</td>
-								<td class="min-w-0">
-									<div
-										class="flex items-center gap-x-2 lg:gap-x-3  no-underline capitalize transition-all duration-300 text-white hover:text-accent"
-										href="#">
+								<td
+									class="min-w-0 sticky left-[64px] max-lg:after:content-[''] max-lg:after:absolute max-lg:after:top-0 max-lg:after:left-[-14px] max-lg:after:w-[calc(100%+14px)] max-lg:after:h-full max-lg:after:bg-[#011f47] max-lg:after:z-[-1]">
+									<a href="#"
+										class="flex items-center gap-x-2 lg:gap-x-3 no-underline capitalize transition-all duration-300 text-white hover:text-accent">
 										<img src="@img/ea6c6c0f7f80378060d31415bf573d94.png" class="w-10 max-sm:w-8 aspect-[1] object-contain">
-									</div>
+									</a>
 								</td>
-								<td class="min-w-0">
+								<td class="min-w-0 self-stretch flex">
 									<a
-										class="flex items-center gap-x-2 lg:gap-x-3  no-underline capitalize transition-all duration-300 text-white hover:text-accent"
+										class="flex items-center gap-x-2 lg:gap-x-3 no-underline capitalize transition-all ml-[-54px] pl-[49px] h-full duration-300 text-white hover:text-accent max-sm:pl-[41px] min-w-0"
 										href="#">
-										<img src="@img/ea6c6c0f7f80378060d31415bf573d94.png" class="w-10 max-sm:w-8 aspect-[1] object-contain">
 										<h3 class="truncate">caliente</h3>
 									</a>
 								</td>
@@ -378,14 +425,20 @@
 								<td>12.5</td>
 							</tr>
 							<tr
-								class="border-b-2 border-white uppercase items-center font-bold text-[18px] gap-x-3.5 text-center py-2 grid grid-cols-[50px_minmax(120px,1.5fr)_repeat(4,minmax(50px,0.5fr))]">
+								class="border-b-2 border-white uppercase items-center font-bold text-[18px] gap-x-3.5 text-center py-2 grid grid-cols-[50px_40px_minmax(120px,1.5fr)_repeat(4,minmax(50px,0.5fr))]">
 								<td
 									class="self-stretch flex justify-center items-center sticky left-0 max-lg:after:content-[''] max-lg:after:absolute max-lg:after:top-0 max-lg:after:left-0 max-lg:after:w-full max-lg:after:h-full max-lg:after:bg-[#011f47] max-lg:after:z-[-1]">10</td>
-								<td class="min-w-0">
-									<a
-										class="flex items-center gap-x-2 lg:gap-x-3 no-underline capitalize transition-all duration-300 text-white hover:text-accent"
-										href="#">
+								<td
+									class="min-w-0 sticky left-[64px] max-lg:after:content-[''] max-lg:after:absolute max-lg:after:top-0 max-lg:after:left-[-14px] max-lg:after:w-[calc(100%+14px)] max-lg:after:h-full max-lg:after:bg-[#011f47] max-lg:after:z-[-1]">
+									<a href="#"
+										class="flex items-center gap-x-2 lg:gap-x-3 no-underline capitalize transition-all duration-300 text-white hover:text-accent">
 										<img src="@img/92736c371ed494682f5cc5533b65bbaf.webp" class="w-10 max-sm:w-8 aspect-[1] object-contain">
+									</a>
+								</td>
+								<td class="min-w-0 self-stretch flex">
+									<a
+										class="flex items-center gap-x-2 lg:gap-x-3 no-underline capitalize transition-all ml-[-54px] pl-[49px] h-full duration-300 text-white hover:text-accent max-sm:pl-[41px] min-w-0"
+										href="#">
 										<h3 class="truncate">rieleros</h3>
 									</a>
 								</td>
@@ -398,7 +451,7 @@
 					</table>
 					<div class="flex justify-center">
 						<a
-							class="bg-white hover:opacity-80 px-4 md:px-6 py-1.5 border-[5px] border-[#081629]/10 rounded-xl font-bold text-base md:text-lg no-underline uppercase transition-all duration-300 text-[#0A2240] max-mobile:w-full text-center"
+							class="bg-white px-6 py-1.5 border-[#0816291a] border-[5px] hover:border-accent rounded-xl max-mobile:w-full font-bold text-[#0A2240] text-lg no-underline uppercase transition-colors duration-300"
 							href="#">
 							view more
 						</a>
