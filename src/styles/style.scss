@@ -47,6 +47,9 @@ body {
 	> main {
 		flex: 1 1 auto;
 		background: url("@img/960d74898af32b18c2cce5690c3ddd05.webp") center / cover no-repeat fixed;
+		@media (min-width: toEm($pc)) {
+			padding-top: 30px;
+		}
 	}
 	// Фікс для слайдерів
 	> * {

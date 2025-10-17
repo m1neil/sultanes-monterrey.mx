@@ -1,0 +1,234 @@
+.page {
+	&--schedule {
+		// layout helpers for schedule containers
+		.year,
+		.navigation {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			gap: 12px;
+		}
+
+		.year {
+		}
+
+		.navigation {
+		}
+
+		.year,
+		.navigation {
+		}
+	}
+}
+
+.day-block {
+	&:not(:last-child) {
+		margin-bottom: 26px;
+	}
+	&-date {
+		gap: 6px;
+		text-transform: uppercase;
+		font-weight: 600;
+		margin-bottom: 16px;
+		font-size: 18px;
+	}
+	&-row {
+		// container for matches of the day
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 20px;
+	}
+}
+
+.match {
+	min-width: 0;
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	background: #081629;
+	border: 5px solid rgba(255, 255, 255, 0.5);
+	border-radius: 16px;
+	padding: 16px;
+	&-row {
+		flex-grow: 1;
+		min-width: 0;
+		> *:not(:last-child) {
+			margin-bottom: 6px;
+		}
+	}
+	&-info {
+		flex-shrink: 0;
+		font-weight: 900;
+		font-size: 17px;
+		line-height: 1.1;
+		text-transform: uppercase;
+		color: #e62e2e; // accent-like; overridden by utilities if present
+		text-align: center;
+	}
+	&-time {
+		font-weight: 700;
+		font-size: 18px;
+		text-align: center;
+		color: #ffffff;
+		margin-bottom: 8px;
+	}
+	&-link {
+		// call-to-action button link
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		gap: 10px;
+		font-size: 15px;
+		padding: 8px 16px;
+		border-radius: 10px;
+		background: #ffffff;
+		border: 4px solid rgba(8, 22, 41, 0.1);
+		color: #0a2240;
+		font-weight: 700;
+		text-transform: uppercase;
+		transition: border-color 0.3s;
+		@media (any-hover: hover) {
+			&:hover {
+				border-color: #f3c148;
+			}
+		}
+	}
+}
+
+.team {
+	&-link {
+		display: flex;
+		align-items: center;
+		gap: 15px;
+		padding: 8px 14px;
+		border-radius: 10px;
+		border: 2px solid transparent;
+		color: #ffffff;
+		font-weight: 700;
+		text-transform: uppercase;
+		min-width: 0;
+		transition:
+			border-color 0.3s,
+			color 0.3s;
+		@media (any-hover: hover) {
+			&:hover {
+				border-color: #f3c148;
+			}
+		}
+	}
+	&-logo {
+		width: 45px;
+		aspect-ratio: 1;
+		object-fit: contain;
+	}
+	&-name {
+		max-width: 220px;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+}
+
+// Switcher
+.switcher {
+	display: grid;
+	place-items: center;
+	width: 35px;
+	aspect-ratio: 1;
+	border: 2px solid rgba(255, 255, 255, 0.5);
+	border-radius: 9999px;
+	transition:
+		border-color 0.3s ease,
+		transform 0.15s ease,
+		opacity 0.3s ease;
+	cursor: pointer;
+	img {
+		width: 16px;
+		aspect-ratio: 1;
+		object-fit: contain;
+	}
+	@media (any-hover: hover) {
+		&:hover {
+			border-color: #f3c148;
+		}
+	}
+
+	&[data-direction="prev"] img {
+		transform: rotate(180deg);
+	}
+}
+
+.custom-select {
+	position: relative;
+	display: inline-block;
+
+	&__button {
+		background: #ffffff;
+		color: #0a2240;
+		border: 4px solid rgba(8, 22, 41, 0.1);
+		border-radius: 12px;
+		padding: 6px 24px;
+		font-weight: 700;
+		text-transform: uppercase;
+		line-height: 1.2;
+		cursor: pointer;
+		transition: border-color 0.3s;
+		min-width: 112px;
+		@media (any-hover: hover) {
+			&:hover {
+				border-color: #f3c148;
+			}
+		}
+	}
+	&__body {
+		position: absolute;
+		top: calc(100% + 20px);
+		left: 50%;
+		transform: translateX(-50%);
+		z-index: 30;
+		background: #ffffff;
+		color: #0a2240;
+		border: 5px solid rgba(8, 22, 41, 0.1);
+		border-radius: 12px;
+		padding: 8px;
+		min-width: 160px;
+		scrollbar-width: thin;
+		box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+		max-height: 260px;
+		overflow-y: auto;
+		opacity: 0;
+		visibility: hidden;
+		transition:
+			opacity 0.3s,
+			visibility 0.3s,
+			top 0.3s;
+
+		[data-select-open] & {
+			opacity: 1;
+			visibility: visible;
+			top: calc(100% + 8px);
+		}
+	}
+	&__option {
+		display: block;
+		width: 100%;
+		text-align: left;
+		padding: 8px 12px;
+		border: 0;
+		background: transparent;
+		border-radius: 8px;
+		cursor: pointer;
+		font-weight: 600;
+		transition:
+			background-color 0.2s ease,
+			color 0.2s ease;
+
+		&:hover {
+			background: rgba(8, 22, 41, 0.06);
+		}
+		&[data-checked] {
+			background: rgba(8, 22, 41, 0.08);
+			font-weight: 800;
+		}
+	}
+}

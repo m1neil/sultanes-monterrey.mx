@@ -1,0 +1,352 @@
+<script type="module" src="@components/pages/standings/standings.js"></script>
+<link rel="stylesheet" href="@components/pages/standings/standings.scss">
+
+<main class="page page--standings">
+	<section class="pc:mb-8">
+		<div
+			class="container text-white bg-gradient-to-r bg-[linear-gradient(0deg,rgba(28,90,173,0.85)_0%,_rgba(28,90,173,0.55)_100%)] py-8 pc:rounded-[20px]">
+			<h1
+				class="mb-1 font-bold text-[33px] max-tablet:text-[26px] text-center uppercase">
+				standings
+			</h1>
+			<div class="overflow-x-auto scrollbar-thin text-center">
+				<ul class="inline-flex gap-x-2.5 text-[18px] font-medium capitalize">
+					<li class="flex gap-x-2.5 items-center after:w-2.5 after:h-[2px] after:bg-white after:content-[''] text-nowrap">
+						<a class="transition-colors hover:text-accent duration-300" href="index.html">Home</a>
+					</li>
+					<li class="text-nowrap">
+						<div>standings</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<div class="pc:mb-8">
+		<div class="container py-8 text-white relative pc:rounded-[20px] pc:overflow-hidden bg-[#011f47]">
+			<div class="relative z-[1] gap-y-9 w-full xl:w-auto">
+				<div class="lg:pr-7">
+					<table class="block not-last:mb-6 overflow-x-auto">
+						<thead class="block max-[915px]:min-w-[885px]">
+							<tr
+								class="border-b-2 border-white uppercase items-center font-bold text-[18px] gap-x-3.5 text-center py-2 grid grid-cols-[50px_40px_100px_repeat(10,minmax(50px,0.5fr))] sm:grid-cols-[50px_40px_minmax(120px,1.5fr)_repeat(10,minmax(50px,0.5fr))]">
+								<th
+									class="self-stretch flex justify-center items-center sticky left-0 max-lg:after:content-[''] max-lg:after:absolute max-lg:after:top-0 max-lg:after:left-0 max-lg:after:w-full max-lg:after:h-full max-lg:after:bg-[#011f47] max-lg:after:z-[-1]">#</th>
+								<th
+									class="text-left sticky left-[64px] col-span-2 max-lg:after:absolute max-lg:after:top-0 max-lg:after:left-[-14px] max-lg:after:w-[77px] max-sm:after:w-[72px] max-lg:after:h-full max-lg:after:bg-[#011f47] max-lg:after:z-[-1]">club</th>
+								<td>W</td>
+								<td>L</td>
+								<td>OT</td>
+								<td>GA</td>
+								<td>GF</td>
+								<th>jg</th>
+								<th>jp</th>
+								<th>pct</th>
+								<th>jv</th>
+								<td>DIFF</td>
+							</tr>
+						</thead>
+						<tbody class="block max-[915px]:min-w-[885px]">
+							<tr
+								class="border-b-2 border-white items-center font-bold text-16 sm:text-[18px] gap-x-3.5 text-center py-2 grid grid-cols-[50px_40px_100px_repeat(10,minmax(50px,0.5fr))] sm:grid-cols-[50px_40px_minmax(120px,1.5fr)_repeat(10,minmax(50px,0.5fr))]">
+								<td
+									class="self-stretch flex justify-center left-0 items-center sticky max-lg:after:content-[''] max-lg:after:absolute max-lg:after:top-0 max-lg:after:left-0 max-lg:after:w-full max-lg:after:h-full max-lg:after:bg-[#011f47] max-lg:after:z-[-1]">1</td>
+								<td
+									class="min-w-0 sticky left-[64px] max-sm:after:w-[55px] max-lg:after:content-[''] max-lg:after:absolute max-lg:after:top-0 max-lg:after:left-[-14px] max-lg:after:w-[calc(100%+24px)] max-lg:after:h-full max-lg:after:bg-[#011f47] max-lg:after:z-[-1]">
+									<a href="#"
+										class="flex items-center gap-x-2 lg:gap-x-3 no-underline capitalize transition-all duration-300 text-white hover:text-accent">
+										<img src="@img/5a137c3b58d25de0c2000c6425a4916a.png" class="w-10 max-sm:w-8 aspect-[1] object-contain">
+									</a>
+								</td>
+								<td class="min-w-0 self-stretch flex">
+									<a
+										class="flex items-center gap-x-2 lg:gap-x-3 no-underline capitalize transition-all ml-[-54px] pl-[49px] h-full duration-300 text-white hover:text-accent max-sm:pl-[41px] min-w-0"
+										href="#">
+										<h3 class="truncate">sultanes</h3>
+									</a>
+								</td>
+								<td>42</td>
+								<td>15</td>
+								<td>3</td>
+								<td>87</td>
+								<td>230</td>
+								<td>40</td>
+								<td>50</td>
+								<td>32</td>
+								<td>.600</td>
+								<td class="text-green-400">+50</td>
+							</tr>
+							<tr
+								class="border-b-2 border-white uppercase items-center font-bold text-16 sm:text-[18px] gap-x-3.5 text-center py-2 grid grid-cols-[50px_40px_100px_repeat(10,minmax(50px,0.5fr))] sm:grid-cols-[50px_40px_minmax(120px,1.5fr)_repeat(10,minmax(50px,0.5fr))]">
+								<td
+									class="self-stretch flex justify-center items-center sticky left-0 max-lg:after:content-[''] max-lg:after:absolute max-lg:after:top-0 max-lg:after:left-0 max-lg:after:w-full max-lg:after:h-full max-lg:after:bg-[#011f47] max-lg:after:z-[-1]">2</td>
+								<td
+									class="min-w-0 sticky left-[64px] max-lg:after:content-[''] max-sm:after:w-[55px] max-lg:after:absolute max-lg:after:top-0 max-lg:after:left-[-14px] max-lg:after:w-[calc(100%+24px)] max-lg:after:h-full max-lg:after:bg-[#011f47] max-lg:after:z-[-1]">
+									<a href="#"
+										class="flex items-center gap-x-2 lg:gap-x-3 no-underline capitalize transition-all duration-300 text-white hover:text-accent">
+										<img src="@img/3218c320f39786c4fcf276f46ce7d346.png" class="w-10 max-sm:w-8 aspect-[1] object-contain">
+									</a>
+								</td>
+								<td class="min-w-0 self-stretch flex">
+									<a
+										class="flex items-center gap-x-2 lg:gap-x-3 no-underline capitalize transition-all ml-[-54px] pl-[49px] h-full duration-300 text-white hover:text-accent max-sm:pl-[41px] min-w-0"
+										href="#">
+										<h3 class="truncate">toros</h3>
+									</a>
+								</td>
+								<td>42</td>
+								<td>15</td>
+								<td>3</td>
+								<td>87</td>
+								<td>230</td>
+								<td>48</td>
+								<td>35</td>
+								<td>.585</td>
+								<td>2.0</td>
+								<td class="text-green-400">+40</td>
+							</tr>
+							<tr
+								class="border-b-2 border-white uppercase items-center font-bold text-16 sm:text-[18px] gap-x-3.5 text-center py-2 grid grid-cols-[50px_40px_100px_repeat(10,minmax(50px,0.5fr))] sm:grid-cols-[50px_40px_minmax(120px,1.5fr)_repeat(10,minmax(50px,0.5fr))]">
+								<td
+									class="self-stretch flex justify-center items-center sticky left-0 max-lg:after:content-[''] max-lg:after:absolute max-lg:after:top-0 max-lg:after:left-0 max-lg:after:w-full max-lg:after:h-full max-lg:after:bg-[#011f47] max-lg:after:z-[-1]">3</td>
+								<td
+									class="min-w-0 sticky left-[64px] max-lg:after:content-[''] max-sm:after:w-[55px] max-lg:after:absolute max-lg:after:top-0 max-lg:after:left-[-14px] max-lg:after:w-[calc(100%+24px)] max-lg:after:h-full max-lg:after:bg-[#011f47] max-lg:after:z-[-1]">
+									<a href="#"
+										class="flex items-center gap-x-2 lg:gap-x-3 no-underline capitalize transition-all duration-300 text-white hover:text-accent">
+										<img src="@img/ea6c6c0f7f80378060d31415bf573d94.png" class="w-10 max-sm:w-8 aspect-[1] object-contain">
+									</a>
+								</td>
+								<td class="min-w-0 self-stretch flex">
+									<a
+										class="flex items-center gap-x-2 lg:gap-x-3 no-underline capitalize transition-all ml-[-54px] pl-[49px] h-full duration-300 text-white hover:text-accent max-sm:pl-[41px] min-w-0"
+										href="#">
+										<h3 class="truncate">acereros</h3>
+									</a>
+								</td>
+								<td>42</td>
+								<td>15</td>
+								<td>3</td>
+								<td>87</td>
+								<td>230</td>
+								<td>44</td>
+								<td>36</td>
+								<td>.555</td>
+								<td>5.0</td>
+								<td class="text-green-400">+30</td>
+							</tr>
+							<tr
+								class="border-b-2 border-white uppercase items-center font-bold text-16 sm:text-[18px] gap-x-3.5 text-center py-2 grid grid-cols-[50px_40px_100px_repeat(10,minmax(50px,0.5fr))] sm:grid-cols-[50px_40px_minmax(120px,1.5fr)_repeat(10,minmax(50px,0.5fr))]">
+								<td
+									class="self-stretch flex justify-center items-center sticky left-0 max-lg:after:content-[''] max-lg:after:absolute max-lg:after:top-0 max-lg:after:left-0 max-lg:after:w-full max-lg:after:h-full max-lg:after:bg-[#011f47] max-lg:after:z-[-1]">4</td>
+								<td
+									class="min-w-0 sticky left-[64px] max-sm:after:w-[55px] max-lg:after:content-[''] max-lg:after:absolute max-lg:after:top-0 max-lg:after:left-[-14px] max-lg:after:w-[calc(100%+24px)] max-lg:after:h-full max-lg:after:bg-[#011f47] max-lg:after:z-[-1]">
+									<a href="#"
+										class="flex items-center gap-x-2 lg:gap-x-3 no-underline capitalize transition-all duration-300 text-white hover:text-accent">
+										<img src="@img/4eb8b3955c336e885305edebdaab70cc.png" class="w-10 max-sm:w-8 aspect-[1] object-contain">
+									</a>
+								</td>
+								<td class="min-w-0 self-stretch flex">
+									<a
+										class="flex items-center gap-x-2 lg:gap-x-3 no-underline capitalize transition-all ml-[-54px] pl-[49px] h-full duration-300 text-white hover:text-accent max-sm:pl-[41px] min-w-0"
+										href="#">
+										<h3 class="truncate">sultanes</h3>
+									</a>
+								</td>
+								<td>42</td>
+								<td>15</td>
+								<td>3</td>
+								<td>87</td>
+								<td>230</td>
+								<td>45</td>
+								<td>37</td>
+								<td>.549</td>
+								<td>5.0</td>
+								<td class="text-green-400">+20</td>
+							</tr>
+							<tr
+								class="border-b-2 border-white uppercase items-center font-bold text-16 sm:text-[18px] gap-x-3.5 text-center py-2 grid grid-cols-[50px_40px_100px_repeat(10,minmax(50px,0.5fr))] sm:grid-cols-[50px_40px_minmax(120px,1.5fr)_repeat(10,minmax(50px,0.5fr))]">
+								<td
+									class="self-stretch flex justify-center items-center sticky left-0 max-lg:after:content-[''] max-lg:after:absolute max-lg:after:top-0 max-lg:after:left-0 max-lg:after:w-full max-lg:after:h-full max-lg:after:bg-[#011f47] max-lg:after:z-[-1]">5</td>
+								<td
+									class="min-w-0 sticky left-[64px] max-sm:after:w-[55px] max-lg:after:content-[''] max-lg:after:absolute max-lg:after:top-0 max-lg:after:left-[-14px] max-lg:after:w-[calc(100%+24px)] max-lg:after:h-full max-lg:after:bg-[#011f47] max-lg:after:z-[-1]">
+									<a href="#"
+										class="flex items-center gap-x-2 lg:gap-x-3 no-underline capitalize transition-all duration-300 text-white hover:text-accent">
+										<img src="@img/92736c371ed494682f5cc5533b65bbaf.webp" class="w-10 max-sm:w-8 aspect-[1] object-contain">
+									</a>
+								</td>
+								<td class="min-w-0 self-stretch flex">
+									<a
+										class="flex items-center gap-x-2 lg:gap-x-3 no-underline capitalize transition-all ml-[-54px] pl-[49px] h-full duration-300 text-white hover:text-accent max-sm:pl-[41px] min-w-0"
+										href="#">
+										<h3 class="truncate">tecolotes</h3>
+									</a>
+								</td>
+								<td>42</td>
+								<td>15</td>
+								<td>3</td>
+								<td>87</td>
+								<td>230</td>
+								<td>45</td>
+								<td>37</td>
+								<td>.549</td>
+								<td>5.0</td>
+								<td class="text-green-400">+10</td>
+							</tr>
+							<tr
+								class="border-b-2 border-white uppercase items-center font-bold text-16 sm:text-[18px] gap-x-3.5 text-center py-2 grid grid-cols-[50px_40px_100px_repeat(10,minmax(50px,0.5fr))] sm:grid-cols-[50px_40px_minmax(120px,1.5fr)_repeat(10,minmax(50px,0.5fr))]">
+								<td
+									class="self-stretch flex justify-center items-center sticky left-0 max-lg:after:content-[''] max-lg:after:absolute max-lg:after:top-0 max-lg:after:left-0 max-lg:after:w-full max-lg:after:h-full max-lg:after:bg-[#011f47] max-lg:after:z-[-1]">6</td>
+								<td
+									class="min-w-0 sticky left-[64px] max-sm:after:w-[55px] max-lg:after:content-[''] max-lg:after:absolute max-lg:after:top-0 max-lg:after:left-[-14px] max-lg:after:w-[calc(100%+24px)] max-lg:after:h-full max-lg:after:bg-[#011f47] max-lg:after:z-[-1]">
+									<a href="#"
+										class="flex items-center gap-x-2 lg:gap-x-3 no-underline capitalize transition-all duration-300 text-white hover:text-accent">
+										<img src="@img/fb77b97b09b94776b4ea76eea1a437c9.png" class="w-10 max-sm:w-8 aspect-[1] object-contain">
+									</a>
+								</td>
+								<td class="min-w-0 self-stretch flex">
+									<a
+										class="flex items-center gap-x-2 lg:gap-x-3 no-underline capitalize transition-all ml-[-54px] pl-[49px] h-full duration-300 text-white hover:text-accent max-sm:pl-[41px] min-w-0"
+										href="#">
+										<h3 class="truncate">charros</h3>
+									</a>
+								</td>
+								<td>42</td>
+								<td>15</td>
+								<td>3</td>
+								<td>87</td>
+								<td>230</td>
+								<td>41</td>
+								<td>41</td>
+								<td>.500</td>
+								<td>9.</td>
+								<td>0</td>
+							</tr>
+							<tr
+								class="border-b-2 border-white uppercase items-center font-bold text-16 sm:text-[18px] gap-x-3.5 text-center py-2 grid grid-cols-[50px_40px_100px_repeat(10,minmax(50px,0.5fr))] sm:grid-cols-[50px_40px_minmax(120px,1.5fr)_repeat(10,minmax(50px,0.5fr))]">
+								<td
+									class="self-stretch flex justify-center items-center sticky left-0 max-lg:after:content-[''] max-lg:after:absolute max-lg:after:top-0 max-lg:after:left-0 max-lg:after:w-full max-lg:after:h-full max-lg:after:bg-[#011f47] max-lg:after:z-[-1]">7</td>
+								<td
+									class="min-w-0 sticky left-[64px] max-sm:after:w-[55px] max-lg:after:content-[''] max-lg:after:absolute max-lg:after:top-0 max-lg:after:left-[-14px] max-lg:after:w-[calc(100%+24px)] max-lg:after:h-full max-lg:after:bg-[#011f47] max-lg:after:z-[-1]">
+									<a href="#"
+										class="flex items-center gap-x-2 lg:gap-x-3 no-underline capitalize transition-all duration-300 text-white hover:text-accent">
+										<img src="@img/67010760940851c6736aa1facda73c34.png" class="w-10 max-sm:w-8 aspect-[1] object-contain">
+									</a>
+								</td>
+								<td class="min-w-0 self-stretch flex">
+									<a
+										class="flex items-center gap-x-2 lg:gap-x-3 no-underline capitalize transition-all ml-[-54px] pl-[49px] h-full duration-300 text-white hover:text-accent max-sm:pl-[41px] min-w-0"
+										href="#">
+										<h3 class="truncate">saraperos</h3>
+									</a>
+								</td>
+								<td>42</td>
+								<td>15</td>
+								<td>3</td>
+								<td>87</td>
+								<td>230</td>
+								<td>41</td>
+								<td>41</td>
+								<td>.500</td>
+								<td>9.0</td>
+								<td class="text-red-400">-10</td>
+							</tr>
+							<tr
+								class="border-b-2 border-white uppercase items-center font-bold text-16 sm:text-[18px] gap-x-3.5 text-center py-2 grid grid-cols-[50px_40px_100px_repeat(10,minmax(50px,0.5fr))] sm:grid-cols-[50px_40px_minmax(120px,1.5fr)_repeat(10,minmax(50px,0.5fr))]">
+								<td
+									class="self-stretch flex justify-center items-center sticky left-0 max-lg:after:content-[''] max-lg:after:absolute max-lg:after:top-0 max-lg:after:left-0 max-lg:after:w-full max-lg:after:h-full max-lg:after:bg-[#011f47] max-lg:after:z-[-1]">8</td>
+								<td
+									class="min-w-0 sticky left-[64px] max-sm:after:w-[55px] max-lg:after:content-[''] max-lg:after:absolute max-lg:after:top-0 max-lg:after:left-[-14px] max-lg:after:w-[calc(100%+24px)] max-lg:after:h-full max-lg:after:bg-[#011f47] max-lg:after:z-[-1]">
+									<a href="#"
+										class="flex items-center gap-x-2 lg:gap-x-3 no-underline capitalize transition-all duration-300 text-white hover:text-accent">
+										<img src="@img/3218c320f39786c4fcf276f46ce7d346.png" class="w-10 max-sm:w-8 aspect-[1] object-contain">
+									</a>
+								</td>
+								<td class="min-w-0 self-stretch flex">
+									<a
+										class="flex items-center gap-x-2 lg:gap-x-3 no-underline capitalize transition-all ml-[-54px] pl-[49px] h-full duration-300 text-white hover:text-accent max-sm:pl-[41px] min-w-0"
+										href="#">
+										<h3 class="truncate">dorados</h3>
+									</a>
+								</td>
+								<td>42</td>
+								<td>15</td>
+								<td>3</td>
+								<td>87</td>
+								<td>230</td>
+								<td>37</td>
+								<td>44</td>
+								<td>.457</td>
+								<td>12.5</td>
+								<td class="text-red-400">-20</td>
+							</tr>
+							<tr
+								class="border-b-2 border-white uppercase items-center font-bold text-16 sm:text-[18px] gap-x-3.5 text-center py-2 grid grid-cols-[50px_40px_100px_repeat(10,minmax(50px,0.5fr))] sm:grid-cols-[50px_40px_minmax(120px,1.5fr)_repeat(10,minmax(50px,0.5fr))]">
+								<td
+									class="self-stretch flex justify-center items-center sticky left-0 max-lg:after:content-[''] max-lg:after:absolute max-lg:after:top-0 max-lg:after:left-0 max-lg:after:w-full max-lg:after:h-full max-lg:after:bg-[#011f47] max-lg:after:z-[-1]">9</td>
+								<td
+									class="min-w-0 sticky left-[64px] max-sm:after:w-[55px] max-lg:after:content-[''] max-lg:after:absolute max-lg:after:top-0 max-lg:after:left-[-14px] max-lg:after:w-[calc(100%+24px)] max-lg:after:h-full max-lg:after:bg-[#011f47] max-lg:after:z-[-1]">
+									<a href="#"
+										class="flex items-center gap-x-2 lg:gap-x-3 no-underline capitalize transition-all duration-300 text-white hover:text-accent">
+										<img src="@img/ea6c6c0f7f80378060d31415bf573d94.png" class="w-10 max-sm:w-8 aspect-[1] object-contain">
+									</a>
+								</td>
+								<td class="min-w-0 self-stretch flex">
+									<a
+										class="flex items-center gap-x-2 lg:gap-x-3 no-underline capitalize transition-all ml-[-54px] pl-[49px] h-full duration-300 text-white hover:text-accent max-sm:pl-[41px] min-w-0"
+										href="#">
+										<h3 class="truncate">caliente</h3>
+									</a>
+								</td>
+								<td>42</td>
+								<td>15</td>
+								<td>3</td>
+								<td>87</td>
+								<td>230</td>
+								<td>35</td>
+								<td>48</td>
+								<td>.422</td>
+								<td>12.5</td>
+								<td class="text-red-400">-30</td>
+							</tr>
+							<tr
+								class="border-b-2 border-white uppercase items-center font-bold text-16 sm:text-[18px] gap-x-3.5 text-center py-2 grid grid-cols-[50px_40px_100px_repeat(10,minmax(50px,0.5fr))] sm:grid-cols-[50px_40px_minmax(120px,1.5fr)_repeat(10,minmax(50px,0.5fr))]">
+								<td
+									class="self-stretch flex justify-center items-center sticky left-0 max-lg:after:content-[''] max-lg:after:absolute max-lg:after:top-0 max-lg:after:left-0 max-lg:after:w-full max-lg:after:h-full max-lg:after:bg-[#011f47] max-lg:after:z-[-1]">10</td>
+								<td
+									class="min-w-0 sticky left-[64px] max-sm:after:w-[55px] max-lg:after:content-[''] max-lg:after:absolute max-lg:after:top-0 max-lg:after:left-[-14px] max-lg:after:w-[calc(100%+24px)] max-lg:after:h-full max-lg:after:bg-[#011f47] max-lg:after:z-[-1]">
+									<a href="#"
+										class="flex items-center gap-x-2 lg:gap-x-3 no-underline capitalize transition-all duration-300 text-white hover:text-accent">
+										<img src="@img/92736c371ed494682f5cc5533b65bbaf.webp" class="w-10 max-sm:w-8 aspect-[1] object-contain">
+									</a>
+								</td>
+								<td class="min-w-0 self-stretch flex">
+									<a
+										class="flex items-center gap-x-2 lg:gap-x-3 no-underline capitalize transition-all ml-[-54px] pl-[49px] h-full duration-300 text-white hover:text-accent max-sm:pl-[41px] min-w-0"
+										href="#">
+										<h3 class="truncate">rieleros</h3>
+									</a>
+								</td>
+								<td>42</td>
+								<td>15</td>
+								<td>3</td>
+								<td>87</td>
+								<td>230</td>
+								<td>32</td>
+								<td>48</td>
+								<td>.400</td>
+								<td>17.0</td>
+								<td class="text-red-400">-40</td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="flex justify-center">
+						<a
+							class="bg-white px-6 py-1.5 border-[#0816291a] border-[5px] hover:border-accent rounded-xl max-mobile:w-full font-bold text-[#0A2240] text-lg no-underline uppercase transition-colors duration-300 text-center"
+							href="#">
+							load more
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</main>

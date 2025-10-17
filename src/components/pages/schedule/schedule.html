@@ -1,0 +1,37 @@
+<script type="module" src="@components/pages/schedule/schedule.js"></script>
+<link rel="stylesheet" href="@components/pages/schedule/schedule.scss">
+
+<main class="page page--schedule">
+	<section class="pc:mb-8">
+		<div
+			class="container text-white bg-gradient-to-r bg-[linear-gradient(0deg,rgba(28,90,173,0.85)_0%,_rgba(28,90,173,0.55)_100%)] py-8 pc:rounded-[20px]">
+			<h1
+				class="mb-1 font-bold text-[33px] max-tablet:text-[26px] text-center uppercase">
+				schedule
+			</h1>
+			<div class="overflow-x-auto scrollbar-thin text-center">
+				<ul class="inline-flex gap-x-2.5 text-[18px] font-medium capitalize">
+					<li class="flex gap-x-2.5 items-center after:w-2.5 after:h-[2px] after:bg-white after:content-[''] text-nowrap">
+						<a class="transition-colors hover:text-accent duration-300" href="index.html">Home</a>
+					</li>
+					<li class="text-nowrap">
+						<div>schedule</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<div class="pc:mb-8">
+		<div
+			data-calendar
+			class="container text-white bg-gradient-to-r bg-[#011f47] py-9 pc:rounded-[20px]">
+			<div class="pc:px-4">
+				<div class="flex gap-x-6">
+					<div data-year-switcher class="year"></div>
+					<div data-month-switcher data-short-month class="navigation"></div>
+				</div>
+				<div data-calendar-body></div>
+			</div>
+		</div>
+	</div>
+</main>

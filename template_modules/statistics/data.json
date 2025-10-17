@@ -34,7 +34,17 @@
       {
         "date": "17.10.2025",
         "start": 1760684687438,
-        "end": 1760684687438
+        "end": 1760689953605
+      },
+      {
+        "date": "17.10.2025",
+        "start": 1760689979632,
+        "end": 1760696435173
+      },
+      {
+        "date": "17.10.2025",
+        "start": 1760696527027,
+        "end": 1760696527027
       }
     ],
     "files": [
@@ -49,7 +59,18 @@
       "menu.js",
       "reset.css",
       "footer.html",
-      "footer.scss"
+      "footer.scss",
+      "news.html",
+      "videos.html",
+      "standings.html",
+      "results.html",
+      "schedule.html",
+      "index.js",
+      "schedule.js",
+      "options.js",
+      "CardSchedule.js",
+      "arrow.png",
+      "schedule.scss"
     ]
   }
 }
