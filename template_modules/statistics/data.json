@@ -44,7 +44,12 @@
       {
         "date": "17.10.2025",
         "start": 1760696527027,
-        "end": 1760696527027
+        "end": 1760700954449
+      },
+      {
+        "date": "17.10.2025",
+        "start": 1760703652940,
+        "end": 1760703652940
       }
     ],
     "files": [
@@ -70,7 +75,11 @@
       "options.js",
       "CardSchedule.js",
       "arrow.png",
-      "schedule.scss"
+      "schedule.scss",
+      "review.html",
+      "review.js",
+      "stat-review.js",
+      "review.scss"
     ]
   }
 }

@@ -47,6 +47,22 @@ body {
 	> main {
 		flex: 1 1 auto;
 		background: url("@img/960d74898af32b18c2cce5690c3ddd05.webp") center / cover no-repeat fixed;
+		.crumbs + * > div {
+			@media (max-width: toEm($pc)) {
+				padding-top: 36px;
+			}
+			@media (max-width: toEm($mobile)) {
+				padding-top: 30px;
+			}
+		}
+		> *:last-child > div {
+			@media (max-width: toEm($pc)) {
+				padding-bottom: 36px;
+			}
+			@media (max-width: toEm($mobile)) {
+				padding-bottom: 30px;
+			}
+		}
 		@media (min-width: toEm($pc)) {
 			padding-top: 30px;
 		}
