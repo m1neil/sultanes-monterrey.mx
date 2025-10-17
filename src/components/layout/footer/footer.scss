@@ -1,5 +1,36 @@
-.footer {
+footer {
 	// .footer__container
-	&__container {
+	summary {
+	}
+	.--spoller-init {
+		summary {
+			cursor: pointer;
+			position: relative;
+			padding-right: 40px;
+			&::before,
+			&::after {
+				content: "";
+				position: absolute;
+				top: 50%;
+				right: 0;
+				width: 12px;
+				height: 1px;
+				background-color: #fff;
+				transform: translate(0, -50%) rotate(-45deg);
+				border-radius: 5px;
+				transition: transform 0.3s;
+			}
+			&::before {
+				transform: translate(-70%, -50%) rotate(45deg);
+			}
+			&.--spoller-active {
+				&::before {
+					transform: translate(-70%, -50%) rotate(-45deg);
+				}
+				&::after {
+					transform: translate(0, -50%) rotate(45deg);
+				}
+			}
+		}
 	}
 }

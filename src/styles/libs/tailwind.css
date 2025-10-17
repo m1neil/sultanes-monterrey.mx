@@ -18,7 +18,23 @@
 	.bg-header-gradient {
 		background: linear-gradient(1deg, rgba(8, 22, 41, 1) 25%, rgba(255, 255, 255, 0.16) 100%);
 	}
+
 	.scrollbar-thin {
 		scrollbar-width: thin;
+	}
+
+	.truncate-row-2 {
+		display: -webkit-box;
+		-webkit-box-orient: vertical;
+		-webkit-line-clamp: 2;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+	.truncate-row-3 {
+		display: -webkit-box;
+		-webkit-box-orient: vertical;
+		-webkit-line-clamp: 3;
+		overflow: hidden;
+		text-overflow: ellipsis;
 	}
 }
