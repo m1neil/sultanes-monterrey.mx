@@ -125,7 +125,8 @@
       "privacy-policy.html",
       "form.scss",
       "input.scss",
-      "form.js"
+      "form.js",
+      "index.scss"
     ]
   }
 }
