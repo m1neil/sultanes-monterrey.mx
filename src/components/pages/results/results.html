@@ -26,6 +26,52 @@
 			class="flex flex-col gap-y-[36px] py-4 tablet:py-5 pc:py-9 relative pc:rounded-[20px] pc:overflow-hidden container">
 			<div class="relative z-[1]">
 				<div class="pc:px-[24px] not-last:mb-6">
+					<div data-fls-select-one class="filters">
+						<!-- Лига -->
+						<select name="form[]" data-fls-select data-fls-select-z-index="4" data-fls-select-modif="form">
+							<option value selected>All Leagues</option>
+							<option value="mlb">MLB (Major League Baseball)</option>
+							<option value="pacific">Pacific League</option>
+							<option value="caribbean">Caribbean Series</option>
+							<option value="mexican">Mexican League</option>
+							<option value="winter">Winter League</option>
+							<option value="winter">Winter League</option>
+							<option value="winter">Winter League</option>
+							<option value="winter">Winter League</option>
+						</select>
+
+						<!-- Год -->
+						<select name="form[]" data-fls-select data-fls-select-z-index="3" data-fls-select-modif="form">
+							<option value selected>All Years</option>
+							<option value="2025">2025 Season</option>
+							<option value="2024">2024 Season</option>
+							<option value="2023">2023 Season</option>
+							<option value="2022">2022 Season</option>
+							<option value="2021">2021 Season</option>
+						</select>
+
+						<!-- Тур / Игровой день -->
+						<select name="form[]" data-fls-select data-fls-select-z-index="2" data-fls-select-modif="form">
+							<option value selected>All Matchdays</option>
+							<option value="opening-day">Opening Day</option>
+							<option value="midseason">Midseason Games</option>
+							<option value="playoffs">Playoffs</option>
+							<option value="finals">Finals</option>
+							<option value="all-star">All-Star Game</option>
+						</select>
+
+						<!-- Команды -->
+						<select name="form[]" data-fls-select data-fls-select-z-index="1" data-fls-select-modif="form">
+							<option value selected>All Teams</option>
+							<option value="sultanes">Sultanes de Monterrey</option>
+							<option value="toros">Toros de Tijuana</option>
+							<option value="diablos">Diablos Rojos del México</option>
+							<option value="tigres">Tigres de Quintana Roo</option>
+							<option value="leones">Leones de Yucatán</option>
+							<option value="acereros">Acereros de Monclova</option>
+							<option value="piratas">Piratas de Campeche</option>
+						</select>
+					</div>
 					<div class="grid md:grid-cols-2 gap-x-[24px] gap-y-[20px] md:gap-y-[24px] list-none text-white">
 						<article
 							class="flex flex-col gap-y-[24px] bg-[#081629] p-[24px] border-[5px] border-white/50 rounded-2xl max-lg:px-[15px] max-lg:gap-y-[20px]">

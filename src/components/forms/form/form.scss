@@ -1,0 +1,69 @@
+.form {
+	max-width: toRem(720);
+	> *:not(:last-child) {
+		margin-bottom: 20px;
+		@media (max-width: toEm($mobile)) {
+			margin-bottom: 16px;
+		}
+	}
+
+	// .form__line
+	&__line {
+	}
+
+	// .form__input
+	&__input {
+	}
+
+	// .form__textarea
+	&__textarea {
+	}
+
+	// .form__message
+	&__message {
+		margin-top: toRem(6);
+		font-size: toRem(12);
+		letter-spacing: 0.08em;
+		text-transform: uppercase;
+		color: rgba(255, 255, 255, 0.55);
+
+		&.--error {
+			color: #ff5656;
+		}
+
+		&.--success {
+			color: #54f6b2;
+		}
+	}
+
+	// .form__controls
+	&__controls {
+		display: flex;
+		align-items: center;
+		gap: toRem(16);
+		flex-wrap: wrap;
+
+		.button {
+			min-width: toRem(170);
+		}
+	}
+
+	// .form__line-group
+	&__line-group {
+		display: grid;
+		gap: toRem(16);
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+
+		@media (max-width: toEm($mobile)) {
+			grid-template-columns: 1fr;
+			gap: toRem(14);
+		}
+	}
+}
+
+[data-fls-form-error] {
+	margin-top: 8px;
+	margin-left: 10px;
+	color: #ff5656;
+	font-weight: 600;
+}

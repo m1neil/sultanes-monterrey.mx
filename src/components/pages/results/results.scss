@@ -1,3 +1,17 @@
-.page{
-	&--results{}
+.page {
+	&--results {
+	}
+}
+
+.filters {
+	display: grid;
+	gap: 16px;
+	grid-template-columns: repeat(4, minmax(auto, 250px));
+	margin-bottom: 20px;
+	@media (max-width: toEm(1023.98)) {
+		grid-template-columns: repeat(2, minmax(auto, 1fr));
+	}
+	@media (max-width: toEm(560)) {
+		grid-template-columns: auto;
+	}
 }

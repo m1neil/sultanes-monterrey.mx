@@ -1,34 +1,115 @@
 //<INPUT>
-// Сніппет (HTML): inp
+// ���?�-������' (HTML): inp
 input[type="text"],
 input[type="email"],
 input[type="tel"],
+input[type="number"],
+input[type="search"],
+input[type="password"],
 textarea {
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;
 }
+
 .input {
-	border-radius: 0 !important;
 	width: 100%;
 	display: block;
-	padding: 10px;
-	border: 1px solid #eee;
-	caret-color: inherit;
+	padding: toRem(14) toRem(22);
+	border-radius: 999px;
+	border: 1.5px solid rgba(255, 255, 255, 0.18);
+	background: linear-gradient(120deg, rgba(8, 22, 41, 0.9) 0%, rgba(10, 34, 64, 0.9) 55%, rgba(12, 47, 82, 0.95) 100%);
+	color: #fff;
+	font-size: toRem(14);
+	line-height: 1.4;
+	font-weight: 400;
+	letter-spacing: 0.04em;
+	caret-color: #f3c148;
+	transition: all 0.3s;
+	backdrop-filter: blur(8px);
+
+	&:not(textarea) {
+		min-height: toRem(52);
+	}
+
+	&::placeholder {
+		color: rgba(255, 255, 255, 0.45);
+		text-transform: uppercase;
+		letter-spacing: 0.12em;
+		transition:
+			opacity 0.3s,
+			color 0.3s;
+	}
+
+	&:focus-visible {
+		border-color: #f3c148;
+	}
+
+	&:focus-visible::placeholder {
+		opacity: 0;
+	}
+
+	&:disabled {
+		cursor: not-allowed;
+		opacity: 0.6;
+		border-color: rgba(255, 255, 255, 0.12);
+	}
+
 	&.--form-focus {
 	}
+
 	&.--form-error {
+		border-color: rgba(255, 86, 86, 0.8);
+		box-shadow: 0 0 0 1px rgba(255, 86, 86, 0.35);
+		&::placeholder {
+			color: rgba(255, 86, 86, 0.7);
+		}
+	}
+
+	&.--form-valid {
+		border-color: rgba(84, 246, 178, 0.8);
+		box-shadow: 0 0 0 1px rgba(84, 246, 178, 0.35);
+	}
+
+	&.--input-light {
+		background: rgba(255, 255, 255, 0.08);
+		border-color: rgba(255, 255, 255, 0.2);
+		box-shadow: none;
+
+		&:focus-visible {
+			box-shadow:
+				0 16px 28px rgba(8, 22, 41, 0.4),
+				inset 0 0 0 1px rgba(243, 193, 72, 0.35);
+		}
 	}
 }
+
 .input[placeholder]:not([data-fls-placeholder-nohiden]) {
-	&::placeholder {
-		transition: opacity 0.3s;
-	}
-	&:focus::placeholder {
+	&:focus::placeholder,
+	&:focus-visible::placeholder {
 		opacity: 0;
 	}
 }
+
 textarea.input {
+	min-height: toRem(160);
+	border-radius: toRem(32);
+	padding: toRem(18) toRem(22);
 	resize: vertical;
-	padding: 0px 0px;
+}
+
+.input-group {
+	display: flex;
+	align-items: center;
+	gap: toRem(12);
+
+	&__icon {
+		flex: 0 0 auto;
+		width: toRem(24);
+		height: toRem(24);
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		color: #f3c148;
+	}
 }

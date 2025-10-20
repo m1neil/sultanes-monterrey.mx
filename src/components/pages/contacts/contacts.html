@@ -21,12 +21,10 @@
 			</div>
 		</div>
 	</section>
-	<section>
+	<section class="pc:mb-8">
 		<div class="container bg-[#fff] pc:rounded-[20px] py-7.5 tablet:py-9">
 			<div class="grid lg:grid-cols-[minmax(300px,1fr)_2fr] items-start gap-6 pc:px-6">
-				<!-- Левая колонка -->
 				<div class="text-[#0A2240] flex flex-col gap-y-5">
-					<!-- Заголовок и описание -->
 					<div class="flex flex-col gap-y-3 text-center lg:text-left">
 						<h2 class="font-bold text-xl uppercase mb-0">Get in touch with us</h2>
 						<p class="mb-0">
@@ -37,15 +35,11 @@
 							imperdiet. Facilisis at vero eros et accumsan et iusto odio.
 						</p>
 					</div>
-
-					<!-- Контакты -->
 					<div class="flex flex-col gap-y-3">
 						<h4 class="text-center lg:text-left uppercase text-lg font-bold mb-0">
 							Office in New York
 						</h4>
-
 						<ul class="flex flex-col list-none gap-y-4">
-							<!-- Адрес -->
 							<li class="flex gap-x-3 items-center">
 								<img
 									src="@img/7f42278a7d97dba7af3782302b6833cf.png"
@@ -59,8 +53,6 @@
 									</a>
 								</div>
 							</li>
-
-							<!-- Телефоны -->
 							<li class="flex gap-x-3 items-center">
 								<img
 									src="@img/11efaaa764a47e220b6e51d965339654.png"
@@ -75,8 +67,6 @@
 										class="text-[#0A2240] no-underline transition-colors hover:text-[#F3C148]">+88 (0) 101 0000 000</a>
 								</div>
 							</li>
-
-							<!-- Почта -->
 							<li class="flex gap-x-3 items-center">
 								<img
 									src="@img/b6bf6c6e2f3752e872d8c4e63f325054.png"
@@ -94,16 +84,21 @@
 						</ul>
 					</div>
 				</div>
-
-				<!-- Правая колонка (изображение) -->
-				<div
-					class="overflow-hidden aspect-[930/509] rounded-3xl h-full w-full min-h-[310px]">
-					<iframe
-						class="object-cover w-full h-full rounded-3xl"
-						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2140.9812184358375!2d-74.03399799426303!3d40.63418933597974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24ff82ba70fed%3A0x9510b406c4651972!2s7300%20Colonial%20Rd%2C%20Brooklyn%2C%20NY%2011209%2C%20USA!5e0!3m2!1sen!2sua!4v1760966028677!5m2!1sen!2sua"
-						style="border:0;" allowfullscreen loading="lazy"
-						referrerpolicy="no-referrer-when-downgrade"></iframe>
-				</div>
+				<form data-fls-form="dev" data-fls-input class="form" method="POST" action="#">
+					<div class="form__line">
+						<input required type="text" name="form[text]" data-fls-form-errtext="Required field!" placeholder="Your name"
+							class="form__input input">
+					</div>
+					<div class="form__line">
+						<input required type="email" name="form[email]" data-fls-form-errtext="Wrong email!" placeholder="Your E-mail"
+							class="form__input input">
+					</div>
+					<div class="form__line">
+						<textarea name="form[message]" placeholder="Your message" class="form__textarea input"></textarea>
+					</div>
+					<button type="submit"
+						class="form__button bg-[#081629] cursor-pointer px-6 text-center py-1.5 border-[5px] border-[#081629]/10 rounded-lg font-bold uppercase transition-all duration-300 text-white hover:border-accent max-mobile:w-full">Send</button>
+				</form>
 			</div>
 
 		</div>

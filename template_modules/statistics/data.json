@@ -115,7 +115,17 @@
       "video-post.html",
       "sliderSettings.js",
       "videopost.scss",
-      "contacts.html"
+      "contacts.html",
+      "privacypolicy.html",
+      "select.scss",
+      "results.scss",
+      "calendar.png",
+      "datepicker.scss",
+      "datepicker.js",
+      "privacy-policy.html",
+      "form.scss",
+      "input.scss",
+      "form.js"
     ]
   }
 }
