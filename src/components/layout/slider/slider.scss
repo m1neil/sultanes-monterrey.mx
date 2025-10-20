@@ -36,3 +36,26 @@
 .swiper-button-lock {
 	display: none !important;
 }
+
+.swiper-pagination {
+	margin-top: 20px;
+	display: flex;
+	justify-content: center;
+	gap: 8px;
+	flex-wrap: wrap;
+	@media (max-width: toEm($mobileSmall)) {
+		margin-top: 18px;
+	}
+	&-bullet {
+		width: 9px;
+		cursor: pointer;
+		aspect-ratio: 1;
+		border-radius: 50%;
+		flex-shrink: 0;
+		background-color: #081629;
+		transition: background-color 0.3s;
+		&-active {
+			background-color: #f3c148;
+		}
+	}
+}

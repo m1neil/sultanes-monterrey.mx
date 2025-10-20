@@ -1,0 +1,128 @@
+.player-card {
+	&__container {
+		background: linear-gradient(180deg, #0a2240 0%, #081629 100%);
+		padding: 36px 0;
+		@media (min-width: toEm($pc)) {
+			border-radius: 32px;
+		}
+	}
+	&__wrapper {
+		display: grid;
+		grid-template-columns: 268px minmax(auto, 540px);
+		align-items: center;
+		gap: 12px;
+		padding: 12px;
+		border: 5px solid rgba(8, 22, 41, 0.1);
+		background: rgba(8, 22, 41, 0.5);
+		max-width: 850px;
+		margin: 0 auto;
+		@media (max-width: toEm($mobile)) {
+			grid-template-columns: 1fr;
+		}
+	}
+
+	&__image-box {
+		background: rgba(8, 22, 41, 0.8);
+		border: 5px solid rgba(8, 22, 41, 0.1);
+		border-radius: 24px;
+		overflow: hidden;
+		aspect-ratio: 264px / 376px;
+		max-width: 264px;
+		@media (max-width: toEm($mobile)) {
+			order: 2;
+			max-width: unset;
+			display: flex;
+			justify-content: center;
+		}
+	}
+
+	&__image {
+		object-fit: contain;
+		width: 100%;
+		height: 100%;
+		object-position: center bottom;
+		@media (max-width: toEm($mobile)) {
+			max-width: 264px;
+		}
+	}
+
+	&__info {
+		display: flex;
+		flex-direction: column;
+		gap: 12px;
+		color: #fff;
+		text-transform: uppercase;
+		@media (max-width: toEm($mobile)) {
+			@media (max-width: toEm($mobile)) {
+				order: 1;
+			}
+		}
+	}
+
+	&__name {
+		font-size: 30px;
+		font-weight: 700;
+		text-align: center;
+		margin: 0;
+		@media (max-width: toEm(1023)) {
+			font-size: 26px;
+		}
+		@media (max-width: toEm($mobile)) {
+			font-size: 24px;
+		}
+		@media (max-width: toEm($mobileSmall)) {
+			font-size: 22px;
+		}
+	}
+
+	&__list {
+		background: rgba(8, 22, 41, 0.8);
+		border-radius: 16px;
+		list-style: none;
+		padding: 12px;
+		margin: 0;
+	}
+
+	&__item {
+		&:not(:last-child) {
+			margin-bottom: toRem(6);
+		}
+		@media (min-width: toEm(600)) {
+			display: flex;
+			justify-content: space-between;
+			gap: 25px;
+		}
+		@media (max-width: toEm(599.98)) {
+			text-align: center;
+			&:not(:last-child) {
+				padding-bottom: 12px;
+				margin-bottom: 12px;
+				border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+			}
+		}
+		span {
+			display: block;
+			@media (min-width: toEm(600)) {
+				&:last-child {
+					text-align: right;
+				}
+			}
+			@media (max-width: toEm(599.98)) {
+				&:first-child {
+					margin-bottom: 2px;
+				}
+			}
+			@media (max-width: toEm($mobileSmall)) {
+				font-size: 15px;
+			}
+		}
+	}
+
+	&__label {
+		opacity: 0.9;
+	}
+
+	&__value {
+		font-weight: 700;
+	}
+}

@@ -49,7 +49,27 @@
       {
         "date": "17.10.2025",
         "start": 1760703652940,
-        "end": 1760703652940
+        "end": 1760720840308
+      },
+      {
+        "date": "18.10.2025",
+        "start": 1760819031636,
+        "end": 1760819167615
+      },
+      {
+        "date": "20.10.2025",
+        "start": 1760943843050,
+        "end": 1760956377557
+      },
+      {
+        "date": "20.10.2025",
+        "start": 1760956383364,
+        "end": 1760962352919
+      },
+      {
+        "date": "20.10.2025",
+        "start": 1760962598575,
+        "end": 1760962598575
       }
     ],
     "files": [
@@ -79,7 +99,17 @@
       "review.html",
       "review.js",
       "stat-review.js",
-      "review.scss"
+      "review.scss",
+      "team.html",
+      "slider.js",
+      "slider.scss",
+      "player.html",
+      "playercard.scss",
+      "post.html",
+      "videopost.html",
+      "video-post.html",
+      "sliderSettings.js",
+      "videopost.scss"
     ]
   }
 }

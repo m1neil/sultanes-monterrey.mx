@@ -1,0 +1,1 @@
+import "./playercard.scss"

@@ -1,0 +1,12 @@
+.page {
+	&--videopost {
+	}
+}
+
+.video-post .swiper {
+	padding: 12px;
+	background-color: #081629;
+	.swiper-pagination-bullet:not(.swiper-pagination-bullet-active) {
+		background-color: #164583;
+	}
+}
