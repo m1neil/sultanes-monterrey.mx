@@ -1,0 +1,471 @@
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="./assets/img/favicon.ico">
+		<title>videopost</title>
+		<script type="module" crossorigin="" src="./js/app.js?v=1761036612702"></script>
+		<script type="module" crossorigin="" src="./js/slider.js?v=1761036612702"></script>
+		<link rel="stylesheet" crossorigin="" href="./css/app.css?v=1761036612702">
+		<link rel="stylesheet" crossorigin="" href="./css/slider.css?v=1761036612702">
+		<link rel="stylesheet" crossorigin="" href="./css/video-post.css?v=1761036612702">
+	</head>
+	<body>
+		<div class="wrapper">
+			<header data-fls-header="" class="bg-header-gradient shadow-header relative z-50">
+				<div class="container flex items-center justify-between gap-x-4 py-2.5 min-h-(--header-height)">
+					<a class="z-[1] relative text-white logo-hover-effect shrink-0" href="index.html">
+						<img class="w-[60px] object-contain aspect-[1]" alt="Logo" src="./assets/img/85d5496ce338b5bf29c10413c57ee365.webp">
+					</a>
+					<div class="menu">
+						<nav class="max-burger:fixed max-burger:w-full max-burger:top-0 max-burger:-left-full
+	max-burger:px-4 max-burger:py-7 max-burger:pt-[calc(var(--header-height)+10px)] max-burger:overflow-y-auto max-burger:h-svh max-burger:bg-[#081629] max-burger:after:content-[''] max-burger:after:w-full max-burger:after:h-(--header-height) max-burger:after:fixed max-burger:after:bg-[#081629] max-burger:after:top-0 transition-all max-burger:after:-left-full max-burger:after:transition-all [html[data-fls-menu-open]_&]:left-0 [html[data-fls-menu-open]_&]:after:left-0 menu-layout">
+							<ul class="burger:flex burger:flex-wrap burger:justify-end burger:gap-x-5.5 burger:gap-y-1.5">
+								<li class="max-burger:not-last:mb-3">
+									<a href="index.html" class="font-bold text-[18px] text-white burger:text-[15px] hover:text-accent hover:text-orange-primary no-underline uppercase transition-all duration-300">Home</a>
+								</li>
+								<li class="max-burger:not-last:mb-3">
+									<a href="news.html" class="font-bold text-[18px] text-white burger:text-[15px] hover:text-accent hover:text-orange-primary no-underline uppercase transition-all duration-300">news</a>
+								</li>
+								<li class="max-burger:not-last:mb-3">
+									<a href="videos.html" class="font-bold text-[18px] text-white burger:text-[15px] hover:text-accent hover:text-orange-primary no-underline uppercase transition-all duration-300">videos</a>
+								</li>
+								<li class="max-burger:not-last:mb-3">
+									<a href="standings" class="font-bold text-[18px] text-white burger:text-[15px] hover:text-accent hover:text-orange-primary no-underline uppercase transition-all duration-300">standings</a>
+								</li>
+								<li class="max-burger:not-last:mb-3">
+									<a href="schedule" class="font-bold text-[18px] text-white burger:text-[15px] hover:text-accent hover:text-orange-primary no-underline uppercase transition-all duration-300">schedule</a>
+								</li>
+								<li class="max-burger:not-last:mb-3">
+									<a href="results" class="font-bold text-[18px] text-white burger:text-[15px] hover:text-accent hover:text-orange-primary no-underline uppercase transition-all duration-300">results</a>
+								</li>
+								<li class="max-burger:not-last:mb-3">
+									<a href="review" class="font-bold text-[18px] text-white burger:text-[15px] hover:text-accent hover:text-orange-primary no-underline uppercase transition-all duration-300">review</a>
+								</li>
+								<li class="max-burger:not-last:mb-3">
+									<a href="team" class="font-bold text-[18px] text-white burger:text-[15px] hover:text-accent hover:text-orange-primary no-underline uppercase transition-all duration-300">team</a>
+								</li>
+								<li class="max-burger:not-last:mb-3">
+									<a href="player" class="font-bold text-[18px] text-white burger:text-[15px] hover:text-accent hover:text-orange-primary no-underline uppercase transition-all duration-300">player</a>
+								</li>
+								<li class="max-burger:not-last:mb-3">
+									<a href="post" class="font-bold text-[18px] text-white burger:text-[15px] hover:text-accent hover:text-orange-primary no-underline uppercase transition-all duration-300">post</a>
+								</li>
+								<li class="max-burger:not-last:mb-3">
+									<a href="video-post" class="font-bold text-[18px] text-white burger:text-[15px] hover:text-accent hover:text-orange-primary no-underline uppercase transition-all duration-300">video post</a>
+								</li>
+								<li class="max-burger:not-last:mb-3">
+									<a href="contacts" class="font-bold text-[18px] text-white burger:text-[15px] hover:text-accent hover:text-orange-primary no-underline uppercase transition-all duration-300">contact us</a>
+								</li>
+							</ul>
+						</nav>
+						<button type="button" data-fls-menu="" class="icon-menu">
+							<span></span>
+						</button>
+					</div>
+				</div>
+			</header>
+			<main class="page page--videopost">
+				<section class="pc:mb-8">
+					<div class="container text-white bg-gradient-to-r bg-[linear-gradient(0deg,rgba(28,90,173,0.85)_0%,_rgba(28,90,173,0.55)_100%)] py-8 max-sm:py-6 pc:rounded-[20px]">
+						<h1 class="mb-2 font-bold text-[33px] max-tablet:text-[26px] max-sm:text-[24px] text-center uppercase leading-[1.3]">Baseball: A Game of Strategy, Speed and Precision</h1>
+						<div class="overflow-x-auto scrollbar-thin text-center">
+							<ul class="inline-flex gap-x-2.5 text-[18px] font-medium capitalize">
+								<li class="flex gap-x-2.5 items-center after:w-2.5 after:h-[2px] after:bg-white after:content-[''] text-nowrap">
+									<a class="transition-colors hover:text-accent duration-300" href="index.html">Home</a>
+								</li>
+								<li class="flex gap-x-2.5 items-center after:w-2.5 after:h-[2px] after:bg-white after:content-[''] text-nowrap">
+									<a class="transition-colors hover:text-accent duration-300" href="videos.html">Videos</a>
+								</li>
+								<li class="text-nowrap">
+									<div>Baseball: A Game of Strategy, Speed and Precision</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+				<article class="pc:mb-8 video-post">
+					<!-- Главный блок с изображениями -->
+					<div class="container bg-[#fff] py-7.5 tablet:py-9 pc:rounded-[20px] pb-4 tablet:pb-5 pc:py-9">
+						<div class="pc:px-6">
+							<div data-fls-slider="" data-slider-wrapper="1023.98,max,videopost" class="relative overflow-hidden rounded-3xl mb-6">
+								<div class="div rounded-2xl aspect-[1392/695] min-h-[280px] pc:min-h-[695px] w-full overflow-hidden">
+									<a class="relative block text-white items-end h-full" href="#">
+										<div class="bg-white rounded-full w-16 aspect-[1] flex justify-center absolute top-1/2 left-1/2 z-[2] -translate-1/2 items-center hover:bg-accent duration-300 will-change-transform transition-all hover:scale-[1.05] border-b border-white/30 max-md:w-14">
+											<img class="w-10 aspect-[1] object-contain translate-x-[2px] max-md:w-9" src="./assets/img/bef000fe0cc5126128ecb3db235c3371.webp">
+										</div>
+										<img class="absolute left-0 top-0 w-full h-full object-cover" src="./assets/img/2dabc061cc3d58f1bb4d6bb3575051a3.webp">
+									</a>
+								</div>
+								<div data-slider-items="" class="pc:absolute pc:top-0 pc:right-0 pc:w-[400px] pc:min-h-full pc:z-[1] bg-[#081629] pc:bg-[#08162980] p-3 pc:flex pc:flex-col gap-3 max-pc:grid max-pc:grid-cols-3">
+									<article class="flex rounded-2xl overflow-hidden">
+										<a class="relative flex text-white items-end aspect-[372/218] w-full min-h-[218px] max-[699.98px]:aspect-[645/300]" href="#">
+											<div class="bg-white rounded-full w-14 aspect-[1] flex justify-center absolute top-1/2 left-1/2 z-[2] -translate-1/2 items-center hover:bg-accent duration-300 will-change-transform transition-all hover:scale-[1.05] border-b border-white/30 max-md:w-14">
+												<img class="w-9 aspect-[1] object-contain translate-x-[2px] max-md:w-9" src="./assets/img/bef000fe0cc5126128ecb3db235c3371.webp">
+											</div>
+											<div class="bg-[#081629]/50 p-3 relative z-[1] w-full">
+												<h3 class="transition-color: #fff; duration-300 font-bold text-lg inline-block leading-[1.4] text-[16px] truncate-row-2 hover:text-accent max-md:text-[16px]">
+													Commodo himenaeos ad mauris finibus tempus a vel quisque. Build Stamina for Distance Success integer proin dis
+										eu arcu.
+												</h3>
+											</div>
+											<img class="absolute left-0 top-0 w-full h-full object-cover" src="./assets/img/e549c1dfb8ce2d502999db54a39d689a.webp">
+										</a>
+									</article>
+									<article class="flex rounded-2xl overflow-hidden">
+										<a class="relative flex text-white items-end aspect-[372/218] w-full min-h-[218px] max-[699.98px]:aspect-[645/300]" href="#">
+											<div class="bg-white rounded-full w-14 aspect-[1] flex justify-center absolute top-1/2 left-1/2 z-[2] -translate-1/2 items-center hover:bg-accent duration-300 will-change-transform transition-all hover:scale-[1.05] border-b border-white/30 max-md:w-14">
+												<img class="w-9 aspect-[1] object-contain translate-x-[2px] max-md:w-9" src="./assets/img/bef000fe0cc5126128ecb3db235c3371.webp">
+											</div>
+											<div class="bg-[#081629]/50 p-3 relative z-[1] w-full">
+												<h3 class="transition-color: #fff; duration-300 font-bold text-lg inline-block leading-[1.4] text-[16px] truncate-row-2 hover:text-accent max-md:text-[16px]">
+													Commodo himenaeos ad mauris finibus tempus a vel quisque. Build Stamina for Distance Success integer proin dis
+										eu arcu.
+												</h3>
+											</div>
+											<img class="absolute left-0 top-0 w-full h-full object-cover" src="./assets/img/e549c1dfb8ce2d502999db54a39d689a.webp">
+										</a>
+									</article>
+									<article class="flex rounded-2xl overflow-hidden">
+										<a class="relative flex text-white items-end aspect-[372/218] w-full min-h-[218px] max-[699.98px]:aspect-[645/300]" href="#">
+											<div class="bg-white rounded-full w-14 aspect-[1] flex justify-center absolute top-1/2 left-1/2 z-[2] -translate-1/2 items-center hover:bg-accent duration-300 will-change-transform transition-all hover:scale-[1.05] border-b border-white/30 max-md:w-14">
+												<img class="w-9 aspect-[1] object-contain translate-x-[2px] max-md:w-9" src="./assets/img/bef000fe0cc5126128ecb3db235c3371.webp">
+											</div>
+											<div class="bg-[#081629]/50 p-3 relative z-[1] w-full">
+												<h3 class="transition-color: #fff; duration-300 font-bold text-lg inline-block leading-[1.4] text-[16px] truncate-row-2 hover:text-accent max-md:text-[16px]">
+													Commodo himenaeos ad mauris finibus tempus a vel quisque. Build Stamina for Distance Success integer proin dis
+										eu arcu.
+												</h3>
+											</div>
+											<img class="absolute left-0 top-0 w-full h-full object-cover" src="./assets/img/e549c1dfb8ce2d502999db54a39d689a.webp">
+										</a>
+									</article>
+								</div>
+							</div>
+							<!-- Текстовый блок -->
+							<div class="text-[#0A2240]">
+								<h3 class="mb-1.5 font-semibold text-[16px]">
+									Dummy text of the printing and typesetting industry. Lorem Ipsume industrys
+						standard
+								</h3>
+								<div>
+									<p class="not-last:mb-1.5">
+										Nulla facilisi. Praesent ut lectus placerat, ullamcorper erat sit amet,
+							semper arcu. Nulla facilisi. Praesent ut lectus placerat, ullamcorper erat
+							sit amet, semper arcu. Pellentesque interdum lacus non sem vulputate, a
+							finibus lectus sodales. Pellentesque mi purus, hendrerit et magna et,
+							maximus volutpat nibh. Nunc nec lectus et lorem eleifend lacinia et
+							fermentum arcu. Fusce sed mi auctor tortor efficitur vestibulum non sed
+							tortor. Donec at suscipit neque, vitae egestas tortor.
+									</p>
+									<p class="not-last:mb-1.5">
+										Pellentesque interdum lacus non sem vulputate, a finibus lectus sodales.
+							Pellentesque mi purus, hendrerit et magna et, maximus volutpat nibh. Nunc
+							nec lectus et lorem eleifend lacinia et fermentum arcu. Fusce sed mi auctor
+							tortor efficitur vestibulum non sed tortor. Donec at suscipit neque, vitae
+							egestas tortor. Nulla facilisi. Praesent ut lectus placerat, ullamcorper
+							erat sit amet, semper arcu. Nulla facilisi. Praesent ut lectus placerat,
+							ullamcorper erat sit amet, semper arcu. Pellentesque interdum lacus non sem
+							vulputate, a finibus lectus sodales. Pellentesque mi purus, hendrerit et
+							magna et, maximus volutpat nibh. Nunc nec lectus et lorem eleifend lacinia
+							et fermentum arcu. Fusce sed mi auctor tortor efficitur vestibulum non sed
+							tortor. Donec at suscipit neque, vitae egestas tortor.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</article>
+				<section data-fls-slider="" class="pc:mb-8">
+					<div class="bg-white py-7.5 tablet:py-9 pc:rounded-[20px] container pt-4 tablet:pt-5 pc:py-9">
+						<h2 class="mb-7 font-bold text-3xl max-tablet:text-[26px] text-center uppercase text-[#0A2240] max-tablet:mb-6 max-md:mb-5">Recent
+				Videos</h2>
+						<div class="swiper content-slider">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<article class="flex rounded-2xl overflow-hidden max-lg:col-span-2 lg:col-span-3 max-md:col-span-1">
+										<a class="relative flex text-white items-end aspect-[684/356] w-full min-h-[280px]" href="#">
+											<div class="bg-white rounded-full w-16 aspect-[1] flex justify-center absolute top-1/2 left-1/2 z-[2] -translate-1/2 items-center hover:bg-accent duration-300 will-change-transform transition-all hover:scale-[1.05] border-b border-white/30 max-md:w-14">
+												<img class="w-10 aspect-[1] object-contain translate-x-[2px] max-md:w-9" src="./assets/img/bef000fe0cc5126128ecb3db235c3371.webp">
+											</div>
+											<div class="bg-[#081629]/50 p-4 px-5 relative w-full z-[1]">
+												<h3 class="transition-color: #fff; duration-300 font-bold text-lg inline-block truncate-row-2 hover:text-accent max-md:text-[16px]">
+													Build Stamina for Distance Success integer proin dis eu arcu. Commodo himenaeos ad mauris finibus tempus a vel
+										eu arcu.
+												</h3>
+											</div>
+											<img class="absolute left-0 top-0 w-full h-full object-cover" src="./assets/img/2dabc061cc3d58f1bb4d6bb3575051a3.webp">
+										</a>
+									</article>
+								</div>
+								<div class="swiper-slide">
+									<article class="flex rounded-2xl overflow-hidden max-lg:col-span-2 lg:col-span-3 max-md:col-span-1">
+										<a class="relative flex text-white items-end aspect-[684/356] w-full min-h-[280px]" href="#">
+											<div class="bg-white rounded-full w-16 aspect-[1] flex justify-center absolute top-1/2 left-1/2 z-[2] -translate-1/2 items-center hover:bg-accent duration-300 will-change-transform transition-all hover:scale-[1.05] border-b border-white/30 max-md:w-14">
+												<img class="w-10 aspect-[1] object-contain translate-x-[2px] max-md:w-9" src="./assets/img/bef000fe0cc5126128ecb3db235c3371.webp">
+											</div>
+											<div class="bg-[#081629]/50 p-4 px-5 relative w-full z-[1]">
+												<h3 class="transition-color: #fff; duration-300 font-bold text-lg inline-block truncate-row-2 hover:text-accent max-md:text-[16px]">
+													Build Stamina for Distance Success integer proin dis eu arcu. Commodo himenaeos ad mauris finibus tempus a vel
+										eu arcu.
+												</h3>
+											</div>
+											<img class="absolute left-0 top-0 w-full h-full object-cover" src="./assets/img/2dabc061cc3d58f1bb4d6bb3575051a3.webp">
+										</a>
+									</article>
+								</div>
+								<div class="swiper-slide">
+									<article class="flex rounded-2xl overflow-hidden max-lg:col-span-2 lg:col-span-3 max-md:col-span-1">
+										<a class="relative flex text-white items-end aspect-[684/356] w-full min-h-[280px]" href="#">
+											<div class="bg-white rounded-full w-16 aspect-[1] flex justify-center absolute top-1/2 left-1/2 z-[2] -translate-1/2 items-center hover:bg-accent duration-300 will-change-transform transition-all hover:scale-[1.05] border-b border-white/30 max-md:w-14">
+												<img class="w-10 aspect-[1] object-contain translate-x-[2px] max-md:w-9" src="./assets/img/bef000fe0cc5126128ecb3db235c3371.webp">
+											</div>
+											<div class="bg-[#081629]/50 p-4 px-5 relative w-full z-[1]">
+												<h3 class="transition-color: #fff; duration-300 font-bold text-lg inline-block truncate-row-2 hover:text-accent max-md:text-[16px]">
+													Build Stamina for Distance Success integer proin dis eu arcu. Commodo himenaeos ad mauris finibus tempus a vel
+										eu arcu.
+												</h3>
+											</div>
+											<img class="absolute left-0 top-0 w-full h-full object-cover" src="./assets/img/2dabc061cc3d58f1bb4d6bb3575051a3.webp">
+										</a>
+									</article>
+								</div>
+								<div class="swiper-slide">
+									<article class="flex rounded-2xl overflow-hidden max-lg:col-span-2 lg:col-span-3 max-md:col-span-1">
+										<a class="relative flex text-white items-end aspect-[684/356] w-full min-h-[280px]" href="#">
+											<div class="bg-white rounded-full w-16 aspect-[1] flex justify-center absolute top-1/2 left-1/2 z-[2] -translate-1/2 items-center hover:bg-accent duration-300 will-change-transform transition-all hover:scale-[1.05] border-b border-white/30 max-md:w-14">
+												<img class="w-10 aspect-[1] object-contain translate-x-[2px] max-md:w-9" src="./assets/img/bef000fe0cc5126128ecb3db235c3371.webp">
+											</div>
+											<div class="bg-[#081629]/50 p-4 px-5 relative w-full z-[1]">
+												<h3 class="transition-color: #fff; duration-300 font-bold text-lg inline-block truncate-row-2 hover:text-accent max-md:text-[16px]">
+													Build Stamina for Distance Success integer proin dis eu arcu. Commodo himenaeos ad mauris finibus tempus a vel
+										eu arcu.
+												</h3>
+											</div>
+											<img class="absolute left-0 top-0 w-full h-full object-cover" src="./assets/img/2dabc061cc3d58f1bb4d6bb3575051a3.webp">
+										</a>
+									</article>
+								</div>
+								<div class="swiper-slide">
+									<article class="flex rounded-2xl overflow-hidden max-lg:col-span-2 lg:col-span-3 max-md:col-span-1">
+										<a class="relative flex text-white items-end aspect-[684/356] w-full min-h-[280px]" href="#">
+											<div class="bg-white rounded-full w-16 aspect-[1] flex justify-center absolute top-1/2 left-1/2 z-[2] -translate-1/2 items-center hover:bg-accent duration-300 will-change-transform transition-all hover:scale-[1.05] border-b border-white/30 max-md:w-14">
+												<img class="w-10 aspect-[1] object-contain translate-x-[2px] max-md:w-9" src="./assets/img/bef000fe0cc5126128ecb3db235c3371.webp">
+											</div>
+											<div class="bg-[#081629]/50 p-4 px-5 relative w-full z-[1]">
+												<h3 class="transition-color: #fff; duration-300 font-bold text-lg inline-block truncate-row-2 hover:text-accent max-md:text-[16px]">
+													Build Stamina for Distance Success integer proin dis eu arcu. Commodo himenaeos ad mauris finibus tempus a vel
+										eu arcu.
+												</h3>
+											</div>
+											<img class="absolute left-0 top-0 w-full h-full object-cover" src="./assets/img/2dabc061cc3d58f1bb4d6bb3575051a3.webp">
+										</a>
+									</article>
+								</div>
+								<div class="swiper-slide">
+									<article class="flex rounded-2xl overflow-hidden max-lg:col-span-2 lg:col-span-3 max-md:col-span-1">
+										<a class="relative flex text-white items-end aspect-[684/356] w-full min-h-[280px]" href="#">
+											<div class="bg-white rounded-full w-16 aspect-[1] flex justify-center absolute top-1/2 left-1/2 z-[2] -translate-1/2 items-center hover:bg-accent duration-300 will-change-transform transition-all hover:scale-[1.05] border-b border-white/30 max-md:w-14">
+												<img class="w-10 aspect-[1] object-contain translate-x-[2px] max-md:w-9" src="./assets/img/bef000fe0cc5126128ecb3db235c3371.webp">
+											</div>
+											<div class="bg-[#081629]/50 p-4 px-5 relative w-full z-[1]">
+												<h3 class="transition-color: #fff; duration-300 font-bold text-lg inline-block truncate-row-2 hover:text-accent max-md:text-[16px]">
+													Build Stamina for Distance Success integer proin dis eu arcu. Commodo himenaeos ad mauris finibus tempus a vel
+										eu arcu.
+												</h3>
+											</div>
+											<img class="absolute left-0 top-0 w-full h-full object-cover" src="./assets/img/2dabc061cc3d58f1bb4d6bb3575051a3.webp">
+										</a>
+									</article>
+								</div>
+								<div class="swiper-slide">
+									<article class="flex rounded-2xl overflow-hidden max-lg:col-span-2 lg:col-span-3 max-md:col-span-1">
+										<a class="relative flex text-white items-end aspect-[684/356] w-full min-h-[280px]" href="#">
+											<div class="bg-white rounded-full w-16 aspect-[1] flex justify-center absolute top-1/2 left-1/2 z-[2] -translate-1/2 items-center hover:bg-accent duration-300 will-change-transform transition-all hover:scale-[1.05] border-b border-white/30 max-md:w-14">
+												<img class="w-10 aspect-[1] object-contain translate-x-[2px] max-md:w-9" src="./assets/img/bef000fe0cc5126128ecb3db235c3371.webp">
+											</div>
+											<div class="bg-[#081629]/50 p-4 px-5 relative w-full z-[1]">
+												<h3 class="transition-color: #fff; duration-300 font-bold text-lg inline-block truncate-row-2 hover:text-accent max-md:text-[16px]">
+													Build Stamina for Distance Success integer proin dis eu arcu. Commodo himenaeos ad mauris finibus tempus a vel
+										eu arcu.
+												</h3>
+											</div>
+											<img class="absolute left-0 top-0 w-full h-full object-cover" src="./assets/img/2dabc061cc3d58f1bb4d6bb3575051a3.webp">
+										</a>
+									</article>
+								</div>
+								<div class="swiper-slide">
+									<article class="flex rounded-2xl overflow-hidden max-lg:col-span-2 lg:col-span-3 max-md:col-span-1">
+										<a class="relative flex text-white items-end aspect-[684/356] w-full min-h-[280px]" href="#">
+											<div class="bg-white rounded-full w-16 aspect-[1] flex justify-center absolute top-1/2 left-1/2 z-[2] -translate-1/2 items-center hover:bg-accent duration-300 will-change-transform transition-all hover:scale-[1.05] border-b border-white/30 max-md:w-14">
+												<img class="w-10 aspect-[1] object-contain translate-x-[2px] max-md:w-9" src="./assets/img/bef000fe0cc5126128ecb3db235c3371.webp">
+											</div>
+											<div class="bg-[#081629]/50 p-4 px-5 relative w-full z-[1]">
+												<h3 class="transition-color: #fff; duration-300 font-bold text-lg inline-block truncate-row-2 hover:text-accent max-md:text-[16px]">
+													Build Stamina for Distance Success integer proin dis eu arcu. Commodo himenaeos ad mauris finibus tempus a vel
+										eu arcu.
+												</h3>
+											</div>
+											<img class="absolute left-0 top-0 w-full h-full object-cover" src="./assets/img/2dabc061cc3d58f1bb4d6bb3575051a3.webp">
+										</a>
+									</article>
+								</div>
+								<div class="swiper-slide">
+									<article class="flex rounded-2xl overflow-hidden max-lg:col-span-2 lg:col-span-3 max-md:col-span-1">
+										<a class="relative flex text-white items-end aspect-[684/356] w-full min-h-[280px]" href="#">
+											<div class="bg-white rounded-full w-16 aspect-[1] flex justify-center absolute top-1/2 left-1/2 z-[2] -translate-1/2 items-center hover:bg-accent duration-300 will-change-transform transition-all hover:scale-[1.05] border-b border-white/30 max-md:w-14">
+												<img class="w-10 aspect-[1] object-contain translate-x-[2px] max-md:w-9" src="./assets/img/bef000fe0cc5126128ecb3db235c3371.webp">
+											</div>
+											<div class="bg-[#081629]/50 p-4 px-5 relative w-full z-[1]">
+												<h3 class="transition-color: #fff; duration-300 font-bold text-lg inline-block truncate-row-2 hover:text-accent max-md:text-[16px]">
+													Build Stamina for Distance Success integer proin dis eu arcu. Commodo himenaeos ad mauris finibus tempus a vel
+										eu arcu.
+												</h3>
+											</div>
+											<img class="absolute left-0 top-0 w-full h-full object-cover" src="./assets/img/2dabc061cc3d58f1bb4d6bb3575051a3.webp">
+										</a>
+									</article>
+								</div>
+								<div class="swiper-slide">
+									<article class="flex rounded-2xl overflow-hidden max-lg:col-span-2 lg:col-span-3 max-md:col-span-1">
+										<a class="relative flex text-white items-end aspect-[684/356] w-full min-h-[280px]" href="#">
+											<div class="bg-white rounded-full w-16 aspect-[1] flex justify-center absolute top-1/2 left-1/2 z-[2] -translate-1/2 items-center hover:bg-accent duration-300 will-change-transform transition-all hover:scale-[1.05] border-b border-white/30 max-md:w-14">
+												<img class="w-10 aspect-[1] object-contain translate-x-[2px] max-md:w-9" src="./assets/img/bef000fe0cc5126128ecb3db235c3371.webp">
+											</div>
+											<div class="bg-[#081629]/50 p-4 px-5 relative w-full z-[1]">
+												<h3 class="transition-color: #fff; duration-300 font-bold text-lg inline-block truncate-row-2 hover:text-accent max-md:text-[16px]">
+													Build Stamina for Distance Success integer proin dis eu arcu. Commodo himenaeos ad mauris finibus tempus a vel
+										eu arcu.
+												</h3>
+											</div>
+											<img class="absolute left-0 top-0 w-full h-full object-cover" src="./assets/img/2dabc061cc3d58f1bb4d6bb3575051a3.webp">
+										</a>
+									</article>
+								</div>
+								<div class="swiper-slide">
+									<article class="flex rounded-2xl overflow-hidden max-lg:col-span-2 lg:col-span-3 max-md:col-span-1">
+										<a class="relative flex text-white items-end aspect-[684/356] w-full min-h-[280px]" href="#">
+											<div class="bg-white rounded-full w-16 aspect-[1] flex justify-center absolute top-1/2 left-1/2 z-[2] -translate-1/2 items-center hover:bg-accent duration-300 will-change-transform transition-all hover:scale-[1.05] border-b border-white/30 max-md:w-14">
+												<img class="w-10 aspect-[1] object-contain translate-x-[2px] max-md:w-9" src="./assets/img/bef000fe0cc5126128ecb3db235c3371.webp">
+											</div>
+											<div class="bg-[#081629]/50 p-4 px-5 relative w-full z-[1]">
+												<h3 class="transition-color: #fff; duration-300 font-bold text-lg inline-block truncate-row-2 hover:text-accent max-md:text-[16px]">
+													Build Stamina for Distance Success integer proin dis eu arcu. Commodo himenaeos ad mauris finibus tempus a vel
+										eu arcu.
+												</h3>
+											</div>
+											<img class="absolute left-0 top-0 w-full h-full object-cover" src="./assets/img/2dabc061cc3d58f1bb4d6bb3575051a3.webp">
+										</a>
+									</article>
+								</div>
+								<div class="swiper-slide">
+									<article class="flex rounded-2xl overflow-hidden max-lg:col-span-2 lg:col-span-3 max-md:col-span-1">
+										<a class="relative flex text-white items-end aspect-[684/356] w-full min-h-[280px]" href="#">
+											<div class="bg-white rounded-full w-16 aspect-[1] flex justify-center absolute top-1/2 left-1/2 z-[2] -translate-1/2 items-center hover:bg-accent duration-300 will-change-transform transition-all hover:scale-[1.05] border-b border-white/30 max-md:w-14">
+												<img class="w-10 aspect-[1] object-contain translate-x-[2px] max-md:w-9" src="./assets/img/bef000fe0cc5126128ecb3db235c3371.webp">
+											</div>
+											<div class="bg-[#081629]/50 p-4 px-5 relative w-full z-[1]">
+												<h3 class="transition-color: #fff; duration-300 font-bold text-lg inline-block truncate-row-2 hover:text-accent max-md:text-[16px]">
+													Build Stamina for Distance Success integer proin dis eu arcu. Commodo himenaeos ad mauris finibus tempus a vel
+										eu arcu.
+												</h3>
+											</div>
+											<img class="absolute left-0 top-0 w-full h-full object-cover" src="./assets/img/2dabc061cc3d58f1bb4d6bb3575051a3.webp">
+										</a>
+									</article>
+								</div>
+							</div>
+							<!-- Якщо потрібна пагінація -->
+							<div class="swiper-pagination"></div>
+						</div>
+					</div>
+				</section>
+			</main>
+			<footer data-fls-footer="">
+				<div class="container flex max-md:gap-y-3.5 items-center md:items-start md:justify-center gap-x-13 py-[30px] max-md:flex-col max-md:pb-[20px]">
+					<a class="transition-all hover:scale-[1.03] w-[80px] h-[80px] will-change-transform shrink-0" href="#">
+						<img class="w-full h-full object-contain" src="./assets/img/85d5496ce338b5bf29c10413c57ee365.webp">
+					</a>
+					<div data-fls-spollers="767.98" class="md:grid md:grid-cols-3 text-white md:basis-[800px] gap-x-7">
+						<details class="max-md:not-last:mb-2">
+							<summary class="text-lg uppercase font-semibold max-md:text-[20px]">COMMERCIAL</summary>
+							<div>
+								<ul class="flex flex-col gap-y-[8px] list-none pt-2">
+									<li>
+										<a href="#" class="hover:text-accent duration-300 text-base transition-all font-semibold text-white">Sponsors and Partners</a>
+									</li>
+									<li>
+										<a href="#" class="hover:text-accent duration-300 text-base transition-all font-semibold text-white">Official Stores</a>
+									</li>
+									<li>
+										<a href="#" class="hover:text-accent duration-300 text-base transition-all font-semibold text-white">Brand Licensing</a>
+									</li>
+									<li>
+										<a href="#" class="hover:text-accent duration-300 text-base transition-all font-semibold text-white">Cruzeiro Schools</a>
+									</li>
+								</ul>
+							</div>
+						</details>
+						<details class="max-md:not-last:mb-2">
+							<summary class="text-lg uppercase font-semibold max-md:text-[20px]">OFFICIAL CHANNELS</summary>
+							<div>
+								<ul class="flex flex-col gap-y-[8px] list-none pt-2">
+									<li>
+										<a href="#" class="hover:text-accent duration-300 text-base transition-all font-semibold text-white">Instagram</a>
+									</li>
+									<li>
+										<a href="#" class="hover:text-accent duration-300 text-base transition-all font-semibold text-white">Facebook</a>
+									</li>
+									<li>
+										<a href="#" class="hover:text-accent duration-300 text-base transition-all font-semibold text-white">YouTube</a>
+									</li>
+									<li>
+										<a href="#" class="hover:text-accent duration-300 text-base transition-all font-semibold text-white">Tik Tok</a>
+									</li>
+									<li>
+										<a href="#" class="hover:text-accent duration-300 text-base transition-all font-semibold text-white">Flickr</a>
+									</li>
+								</ul>
+							</div>
+						</details>
+						<details class="max-md:not-last:mb-2">
+							<summary class="text-lg uppercase font-semibold max-md:text-[20px]">TRANSPARENCY</summary>
+							<div>
+								<ul class="flex flex-col gap-y-[8px] list-none pt-2">
+									<li>
+										<a href="#" class="hover:text-accent duration-300 text-base transition-all font-semibold text-white">Articles of Association</a>
+									</li>
+									<li>
+										<a href="#" class="hover:text-accent duration-300 text-base transition-all font-semibold text-white">Code of
+								Ethics</a>
+									</li>
+									<li>
+										<a href="#" class="hover:text-accent duration-300 text-base transition-all font-semibold text-white">Minutes</a>
+									</li>
+									<li>
+										<a href="#" class="hover:text-accent duration-300 text-base transition-all font-semibold text-white">Financial</a>
+									</li>
+									<li>
+										<a href="privacy-policy.html" class="hover:text-accent duration-300 text-base transition-all font-semibold text-white">Privacy
+								Policy</a>
+									</li>
+									<li>
+										<a href="#" class="hover:text-accent duration-300 text-base transition-all font-semibold text-white">Fan Code of Conduct</a>
+									</li>
+									<li>
+										<a href="#" class="hover:text-accent duration-300 text-base transition-all font-semibold text-white">Salary Transparency</a>
+									</li>
+								</ul>
+							</div>
+						</details>
+					</div>
+				</div>
+				<div class="text-sm text-center font-semibold text-white pb-6">© 2025 Cruzeiro SAF. All rights reserved.</div>
+			</footer>
+			<a data-fls-gotop="" data-top="70" data-fls-scrollto="header" aria-label="scroll to top of page" href="#">
+				<img alt="Image" src="./assets/img/arrow.webp">
+			</a>
+		</div>
+	</body>
+</html>

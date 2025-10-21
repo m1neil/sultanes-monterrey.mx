@@ -1,0 +1,438 @@
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="./assets/img/favicon.ico">
+		<title>standings</title>
+		<script type="module" crossorigin="" src="./js/standings.js?v=1761036612703"></script>
+		<link rel="modulepreload" crossorigin="" href="./js/app.js?v=1761036612703">
+		<link rel="stylesheet" crossorigin="" href="./css/app.css?v=1761036612703">
+		<link rel="stylesheet" crossorigin="" href="./css/standings.css?v=1761036612703">
+	</head>
+	<body>
+		<div class="wrapper">
+			<header data-fls-header="" class="bg-header-gradient shadow-header relative z-50">
+				<div class="container flex items-center justify-between gap-x-4 py-2.5 min-h-(--header-height)">
+					<a class="z-[1] relative text-white logo-hover-effect shrink-0" href="index.html">
+						<img class="w-[60px] object-contain aspect-[1]" alt="Logo" src="./assets/img/85d5496ce338b5bf29c10413c57ee365.webp">
+					</a>
+					<div class="menu">
+						<nav class="max-burger:fixed max-burger:w-full max-burger:top-0 max-burger:-left-full
+	max-burger:px-4 max-burger:py-7 max-burger:pt-[calc(var(--header-height)+10px)] max-burger:overflow-y-auto max-burger:h-svh max-burger:bg-[#081629] max-burger:after:content-[''] max-burger:after:w-full max-burger:after:h-(--header-height) max-burger:after:fixed max-burger:after:bg-[#081629] max-burger:after:top-0 transition-all max-burger:after:-left-full max-burger:after:transition-all [html[data-fls-menu-open]_&]:left-0 [html[data-fls-menu-open]_&]:after:left-0 menu-layout">
+							<ul class="burger:flex burger:flex-wrap burger:justify-end burger:gap-x-5.5 burger:gap-y-1.5">
+								<li class="max-burger:not-last:mb-3">
+									<a href="index.html" class="font-bold text-[18px] text-white burger:text-[15px] hover:text-accent hover:text-orange-primary no-underline uppercase transition-all duration-300">Home</a>
+								</li>
+								<li class="max-burger:not-last:mb-3">
+									<a href="news.html" class="font-bold text-[18px] text-white burger:text-[15px] hover:text-accent hover:text-orange-primary no-underline uppercase transition-all duration-300">news</a>
+								</li>
+								<li class="max-burger:not-last:mb-3">
+									<a href="videos.html" class="font-bold text-[18px] text-white burger:text-[15px] hover:text-accent hover:text-orange-primary no-underline uppercase transition-all duration-300">videos</a>
+								</li>
+								<li class="max-burger:not-last:mb-3">
+									<a href="standings" class="font-bold text-[18px] text-white burger:text-[15px] hover:text-accent hover:text-orange-primary no-underline uppercase transition-all duration-300">standings</a>
+								</li>
+								<li class="max-burger:not-last:mb-3">
+									<a href="schedule" class="font-bold text-[18px] text-white burger:text-[15px] hover:text-accent hover:text-orange-primary no-underline uppercase transition-all duration-300">schedule</a>
+								</li>
+								<li class="max-burger:not-last:mb-3">
+									<a href="results" class="font-bold text-[18px] text-white burger:text-[15px] hover:text-accent hover:text-orange-primary no-underline uppercase transition-all duration-300">results</a>
+								</li>
+								<li class="max-burger:not-last:mb-3">
+									<a href="review" class="font-bold text-[18px] text-white burger:text-[15px] hover:text-accent hover:text-orange-primary no-underline uppercase transition-all duration-300">review</a>
+								</li>
+								<li class="max-burger:not-last:mb-3">
+									<a href="team" class="font-bold text-[18px] text-white burger:text-[15px] hover:text-accent hover:text-orange-primary no-underline uppercase transition-all duration-300">team</a>
+								</li>
+								<li class="max-burger:not-last:mb-3">
+									<a href="player" class="font-bold text-[18px] text-white burger:text-[15px] hover:text-accent hover:text-orange-primary no-underline uppercase transition-all duration-300">player</a>
+								</li>
+								<li class="max-burger:not-last:mb-3">
+									<a href="post" class="font-bold text-[18px] text-white burger:text-[15px] hover:text-accent hover:text-orange-primary no-underline uppercase transition-all duration-300">post</a>
+								</li>
+								<li class="max-burger:not-last:mb-3">
+									<a href="video-post" class="font-bold text-[18px] text-white burger:text-[15px] hover:text-accent hover:text-orange-primary no-underline uppercase transition-all duration-300">video post</a>
+								</li>
+								<li class="max-burger:not-last:mb-3">
+									<a href="contacts" class="font-bold text-[18px] text-white burger:text-[15px] hover:text-accent hover:text-orange-primary no-underline uppercase transition-all duration-300">contact us</a>
+								</li>
+							</ul>
+						</nav>
+						<button type="button" data-fls-menu="" class="icon-menu">
+							<span></span>
+						</button>
+					</div>
+				</div>
+			</header>
+			<main class="page page--standings">
+				<section class="crumbs pc:mb-8">
+					<div class="container text-white bg-gradient-to-r bg-[linear-gradient(0deg,rgba(28,90,173,0.85)_0%,_rgba(28,90,173,0.55)_100%)] py-8 max-sm:py-6 pc:rounded-[20px]">
+						<h1 class="mb-2 font-bold text-[33px] max-tablet:text-[26px] max-sm:text-[24px] text-center uppercase leading-[1.3]">standings</h1>
+						<div class="overflow-x-auto scrollbar-thin text-center">
+							<ul class="inline-flex gap-x-2.5 text-[18px] font-medium capitalize">
+								<li class="flex gap-x-2.5 items-center after:w-2.5 after:h-[2px] after:bg-white after:content-[''] text-nowrap">
+									<a class="transition-colors hover:text-accent duration-300" href="index.html">Home</a>
+								</li>
+								<li class="text-nowrap">
+									<div>standings</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+				<div class="pc:mb-8">
+					<div class="container py-4 tablet:py-5 pc:py-9 text-white relative pc:rounded-[20px] pc:overflow-hidden bg-[#011f47]">
+						<div class="relative z-[1] gap-y-9 w-full xl:w-auto">
+							<div class="lg:pr-7">
+								<div class="ml-[25px]">
+									<div class="datepicker">
+										<img class="datepicker__icon" alt="icon calendar" src="./assets/img/calendar.webp">
+										<input data-fls-datepicker="" type="button" name="datepicker" class="datepicker__input">
+									</div>
+								</div>
+								<table class="block not-last:mb-6 overflow-x-auto">
+									<thead class="block max-[915px]:min-w-[885px]">
+										<tr class="border-b-2 border-white uppercase items-center font-bold text-[18px] gap-x-3.5 text-center py-2 grid grid-cols-[50px_40px_100px_repeat(10,minmax(50px,0.5fr))] sm:grid-cols-[50px_40px_minmax(120px,1.5fr)_repeat(10,minmax(50px,0.5fr))]">
+											<th class="self-stretch flex justify-center items-center sticky left-0 max-lg:after:content-[''] max-lg:after:absolute max-lg:after:top-0 max-lg:after:left-0 max-lg:after:w-full max-lg:after:h-full max-lg:after:bg-[#011f47] max-lg:after:z-[-1]">#</th>
+											<th class="text-left sticky left-[64px] col-span-2 max-lg:after:absolute max-lg:after:top-0 max-lg:after:left-[-14px] max-lg:after:w-[77px] max-sm:after:w-[72px] max-lg:after:h-full max-lg:after:bg-[#011f47] max-lg:after:z-[-1]">club</th>
+											<td>W</td>
+											<td>L</td>
+											<td>OT</td>
+											<td>GA</td>
+											<td>GF</td>
+											<th>jg</th>
+											<th>jp</th>
+											<th>pct</th>
+											<th>jv</th>
+											<td>DIFF</td>
+										</tr>
+									</thead>
+									<tbody class="block max-[915px]:min-w-[885px]">
+										<tr class="border-b-2 border-white items-center font-bold text-16 sm:text-[18px] gap-x-3.5 text-center py-2 grid grid-cols-[50px_40px_100px_repeat(10,minmax(50px,0.5fr))] sm:grid-cols-[50px_40px_minmax(120px,1.5fr)_repeat(10,minmax(50px,0.5fr))]">
+											<td class="self-stretch flex justify-center left-0 items-center sticky max-lg:after:content-[''] max-lg:after:absolute max-lg:after:top-0 max-lg:after:left-0 max-lg:after:w-full max-lg:after:h-full max-lg:after:bg-[#011f47] max-lg:after:z-[-1]">1</td>
+											<td class="min-w-0 sticky left-[64px] max-sm:after:w-[55px] max-lg:after:content-[''] max-lg:after:absolute max-lg:after:top-0 max-lg:after:left-[-14px] max-lg:after:w-[calc(100%+24px)] max-lg:after:h-full max-lg:after:bg-[#011f47] max-lg:after:z-[-1]">
+												<a href="#" class="flex items-center gap-x-2 lg:gap-x-3 no-underline capitalize transition-all duration-300 text-white hover:text-accent">
+													<img class="w-10 max-sm:w-8 aspect-[1] object-contain" src="./assets/img/5a137c3b58d25de0c2000c6425a4916a.webp">
+												</a>
+											</td>
+											<td class="min-w-0 self-stretch flex">
+												<a class="flex items-center gap-x-2 lg:gap-x-3 no-underline capitalize transition-all ml-[-54px] pl-[49px] h-full duration-300 text-white hover:text-accent max-sm:pl-[41px] min-w-0" href="#">
+													<h3 class="truncate">sultanes</h3>
+												</a>
+											</td>
+											<td>42</td>
+											<td>15</td>
+											<td>3</td>
+											<td>87</td>
+											<td>230</td>
+											<td>40</td>
+											<td>50</td>
+											<td>32</td>
+											<td>.600</td>
+											<td class="text-green-400">+50</td>
+										</tr>
+										<tr class="border-b-2 border-white uppercase items-center font-bold text-16 sm:text-[18px] gap-x-3.5 text-center py-2 grid grid-cols-[50px_40px_100px_repeat(10,minmax(50px,0.5fr))] sm:grid-cols-[50px_40px_minmax(120px,1.5fr)_repeat(10,minmax(50px,0.5fr))]">
+											<td class="self-stretch flex justify-center items-center sticky left-0 max-lg:after:content-[''] max-lg:after:absolute max-lg:after:top-0 max-lg:after:left-0 max-lg:after:w-full max-lg:after:h-full max-lg:after:bg-[#011f47] max-lg:after:z-[-1]">2</td>
+											<td class="min-w-0 sticky left-[64px] max-lg:after:content-[''] max-sm:after:w-[55px] max-lg:after:absolute max-lg:after:top-0 max-lg:after:left-[-14px] max-lg:after:w-[calc(100%+24px)] max-lg:after:h-full max-lg:after:bg-[#011f47] max-lg:after:z-[-1]">
+												<a href="#" class="flex items-center gap-x-2 lg:gap-x-3 no-underline capitalize transition-all duration-300 text-white hover:text-accent">
+													<img class="w-10 max-sm:w-8 aspect-[1] object-contain" src="./assets/img/3218c320f39786c4fcf276f46ce7d346.webp">
+												</a>
+											</td>
+											<td class="min-w-0 self-stretch flex">
+												<a class="flex items-center gap-x-2 lg:gap-x-3 no-underline capitalize transition-all ml-[-54px] pl-[49px] h-full duration-300 text-white hover:text-accent max-sm:pl-[41px] min-w-0" href="#">
+													<h3 class="truncate">toros</h3>
+												</a>
+											</td>
+											<td>42</td>
+											<td>15</td>
+											<td>3</td>
+											<td>87</td>
+											<td>230</td>
+											<td>48</td>
+											<td>35</td>
+											<td>.585</td>
+											<td>2.0</td>
+											<td class="text-green-400">+40</td>
+										</tr>
+										<tr class="border-b-2 border-white uppercase items-center font-bold text-16 sm:text-[18px] gap-x-3.5 text-center py-2 grid grid-cols-[50px_40px_100px_repeat(10,minmax(50px,0.5fr))] sm:grid-cols-[50px_40px_minmax(120px,1.5fr)_repeat(10,minmax(50px,0.5fr))]">
+											<td class="self-stretch flex justify-center items-center sticky left-0 max-lg:after:content-[''] max-lg:after:absolute max-lg:after:top-0 max-lg:after:left-0 max-lg:after:w-full max-lg:after:h-full max-lg:after:bg-[#011f47] max-lg:after:z-[-1]">3</td>
+											<td class="min-w-0 sticky left-[64px] max-lg:after:content-[''] max-sm:after:w-[55px] max-lg:after:absolute max-lg:after:top-0 max-lg:after:left-[-14px] max-lg:after:w-[calc(100%+24px)] max-lg:after:h-full max-lg:after:bg-[#011f47] max-lg:after:z-[-1]">
+												<a href="#" class="flex items-center gap-x-2 lg:gap-x-3 no-underline capitalize transition-all duration-300 text-white hover:text-accent">
+													<img class="w-10 max-sm:w-8 aspect-[1] object-contain" src="./assets/img/ea6c6c0f7f80378060d31415bf573d94.webp">
+												</a>
+											</td>
+											<td class="min-w-0 self-stretch flex">
+												<a class="flex items-center gap-x-2 lg:gap-x-3 no-underline capitalize transition-all ml-[-54px] pl-[49px] h-full duration-300 text-white hover:text-accent max-sm:pl-[41px] min-w-0" href="#">
+													<h3 class="truncate">acereros</h3>
+												</a>
+											</td>
+											<td>42</td>
+											<td>15</td>
+											<td>3</td>
+											<td>87</td>
+											<td>230</td>
+											<td>44</td>
+											<td>36</td>
+											<td>.555</td>
+											<td>5.0</td>
+											<td class="text-green-400">+30</td>
+										</tr>
+										<tr class="border-b-2 border-white uppercase items-center font-bold text-16 sm:text-[18px] gap-x-3.5 text-center py-2 grid grid-cols-[50px_40px_100px_repeat(10,minmax(50px,0.5fr))] sm:grid-cols-[50px_40px_minmax(120px,1.5fr)_repeat(10,minmax(50px,0.5fr))]">
+											<td class="self-stretch flex justify-center items-center sticky left-0 max-lg:after:content-[''] max-lg:after:absolute max-lg:after:top-0 max-lg:after:left-0 max-lg:after:w-full max-lg:after:h-full max-lg:after:bg-[#011f47] max-lg:after:z-[-1]">4</td>
+											<td class="min-w-0 sticky left-[64px] max-sm:after:w-[55px] max-lg:after:content-[''] max-lg:after:absolute max-lg:after:top-0 max-lg:after:left-[-14px] max-lg:after:w-[calc(100%+24px)] max-lg:after:h-full max-lg:after:bg-[#011f47] max-lg:after:z-[-1]">
+												<a href="#" class="flex items-center gap-x-2 lg:gap-x-3 no-underline capitalize transition-all duration-300 text-white hover:text-accent">
+													<img class="w-10 max-sm:w-8 aspect-[1] object-contain" src="./assets/img/4eb8b3955c336e885305edebdaab70cc.webp">
+												</a>
+											</td>
+											<td class="min-w-0 self-stretch flex">
+												<a class="flex items-center gap-x-2 lg:gap-x-3 no-underline capitalize transition-all ml-[-54px] pl-[49px] h-full duration-300 text-white hover:text-accent max-sm:pl-[41px] min-w-0" href="#">
+													<h3 class="truncate">sultanes</h3>
+												</a>
+											</td>
+											<td>42</td>
+											<td>15</td>
+											<td>3</td>
+											<td>87</td>
+											<td>230</td>
+											<td>45</td>
+											<td>37</td>
+											<td>.549</td>
+											<td>5.0</td>
+											<td class="text-green-400">+20</td>
+										</tr>
+										<tr class="border-b-2 border-white uppercase items-center font-bold text-16 sm:text-[18px] gap-x-3.5 text-center py-2 grid grid-cols-[50px_40px_100px_repeat(10,minmax(50px,0.5fr))] sm:grid-cols-[50px_40px_minmax(120px,1.5fr)_repeat(10,minmax(50px,0.5fr))]">
+											<td class="self-stretch flex justify-center items-center sticky left-0 max-lg:after:content-[''] max-lg:after:absolute max-lg:after:top-0 max-lg:after:left-0 max-lg:after:w-full max-lg:after:h-full max-lg:after:bg-[#011f47] max-lg:after:z-[-1]">5</td>
+											<td class="min-w-0 sticky left-[64px] max-sm:after:w-[55px] max-lg:after:content-[''] max-lg:after:absolute max-lg:after:top-0 max-lg:after:left-[-14px] max-lg:after:w-[calc(100%+24px)] max-lg:after:h-full max-lg:after:bg-[#011f47] max-lg:after:z-[-1]">
+												<a href="#" class="flex items-center gap-x-2 lg:gap-x-3 no-underline capitalize transition-all duration-300 text-white hover:text-accent">
+													<img class="w-10 max-sm:w-8 aspect-[1] object-contain" src="./assets/img/92736c371ed494682f5cc5533b65bbaf.webp">
+												</a>
+											</td>
+											<td class="min-w-0 self-stretch flex">
+												<a class="flex items-center gap-x-2 lg:gap-x-3 no-underline capitalize transition-all ml-[-54px] pl-[49px] h-full duration-300 text-white hover:text-accent max-sm:pl-[41px] min-w-0" href="#">
+													<h3 class="truncate">tecolotes</h3>
+												</a>
+											</td>
+											<td>42</td>
+											<td>15</td>
+											<td>3</td>
+											<td>87</td>
+											<td>230</td>
+											<td>45</td>
+											<td>37</td>
+											<td>.549</td>
+											<td>5.0</td>
+											<td class="text-green-400">+10</td>
+										</tr>
+										<tr class="border-b-2 border-white uppercase items-center font-bold text-16 sm:text-[18px] gap-x-3.5 text-center py-2 grid grid-cols-[50px_40px_100px_repeat(10,minmax(50px,0.5fr))] sm:grid-cols-[50px_40px_minmax(120px,1.5fr)_repeat(10,minmax(50px,0.5fr))]">
+											<td class="self-stretch flex justify-center items-center sticky left-0 max-lg:after:content-[''] max-lg:after:absolute max-lg:after:top-0 max-lg:after:left-0 max-lg:after:w-full max-lg:after:h-full max-lg:after:bg-[#011f47] max-lg:after:z-[-1]">6</td>
+											<td class="min-w-0 sticky left-[64px] max-sm:after:w-[55px] max-lg:after:content-[''] max-lg:after:absolute max-lg:after:top-0 max-lg:after:left-[-14px] max-lg:after:w-[calc(100%+24px)] max-lg:after:h-full max-lg:after:bg-[#011f47] max-lg:after:z-[-1]">
+												<a href="#" class="flex items-center gap-x-2 lg:gap-x-3 no-underline capitalize transition-all duration-300 text-white hover:text-accent">
+													<img class="w-10 max-sm:w-8 aspect-[1] object-contain" src="./assets/img/fb77b97b09b94776b4ea76eea1a437c9.webp">
+												</a>
+											</td>
+											<td class="min-w-0 self-stretch flex">
+												<a class="flex items-center gap-x-2 lg:gap-x-3 no-underline capitalize transition-all ml-[-54px] pl-[49px] h-full duration-300 text-white hover:text-accent max-sm:pl-[41px] min-w-0" href="#">
+													<h3 class="truncate">charros</h3>
+												</a>
+											</td>
+											<td>42</td>
+											<td>15</td>
+											<td>3</td>
+											<td>87</td>
+											<td>230</td>
+											<td>41</td>
+											<td>41</td>
+											<td>.500</td>
+											<td>9.</td>
+											<td>0</td>
+										</tr>
+										<tr class="border-b-2 border-white uppercase items-center font-bold text-16 sm:text-[18px] gap-x-3.5 text-center py-2 grid grid-cols-[50px_40px_100px_repeat(10,minmax(50px,0.5fr))] sm:grid-cols-[50px_40px_minmax(120px,1.5fr)_repeat(10,minmax(50px,0.5fr))]">
+											<td class="self-stretch flex justify-center items-center sticky left-0 max-lg:after:content-[''] max-lg:after:absolute max-lg:after:top-0 max-lg:after:left-0 max-lg:after:w-full max-lg:after:h-full max-lg:after:bg-[#011f47] max-lg:after:z-[-1]">7</td>
+											<td class="min-w-0 sticky left-[64px] max-sm:after:w-[55px] max-lg:after:content-[''] max-lg:after:absolute max-lg:after:top-0 max-lg:after:left-[-14px] max-lg:after:w-[calc(100%+24px)] max-lg:after:h-full max-lg:after:bg-[#011f47] max-lg:after:z-[-1]">
+												<a href="#" class="flex items-center gap-x-2 lg:gap-x-3 no-underline capitalize transition-all duration-300 text-white hover:text-accent">
+													<img class="w-10 max-sm:w-8 aspect-[1] object-contain" src="./assets/img/67010760940851c6736aa1facda73c34.webp">
+												</a>
+											</td>
+											<td class="min-w-0 self-stretch flex">
+												<a class="flex items-center gap-x-2 lg:gap-x-3 no-underline capitalize transition-all ml-[-54px] pl-[49px] h-full duration-300 text-white hover:text-accent max-sm:pl-[41px] min-w-0" href="#">
+													<h3 class="truncate">saraperos</h3>
+												</a>
+											</td>
+											<td>42</td>
+											<td>15</td>
+											<td>3</td>
+											<td>87</td>
+											<td>230</td>
+											<td>41</td>
+											<td>41</td>
+											<td>.500</td>
+											<td>9.0</td>
+											<td class="text-red-400">-10</td>
+										</tr>
+										<tr class="border-b-2 border-white uppercase items-center font-bold text-16 sm:text-[18px] gap-x-3.5 text-center py-2 grid grid-cols-[50px_40px_100px_repeat(10,minmax(50px,0.5fr))] sm:grid-cols-[50px_40px_minmax(120px,1.5fr)_repeat(10,minmax(50px,0.5fr))]">
+											<td class="self-stretch flex justify-center items-center sticky left-0 max-lg:after:content-[''] max-lg:after:absolute max-lg:after:top-0 max-lg:after:left-0 max-lg:after:w-full max-lg:after:h-full max-lg:after:bg-[#011f47] max-lg:after:z-[-1]">8</td>
+											<td class="min-w-0 sticky left-[64px] max-sm:after:w-[55px] max-lg:after:content-[''] max-lg:after:absolute max-lg:after:top-0 max-lg:after:left-[-14px] max-lg:after:w-[calc(100%+24px)] max-lg:after:h-full max-lg:after:bg-[#011f47] max-lg:after:z-[-1]">
+												<a href="#" class="flex items-center gap-x-2 lg:gap-x-3 no-underline capitalize transition-all duration-300 text-white hover:text-accent">
+													<img class="w-10 max-sm:w-8 aspect-[1] object-contain" src="./assets/img/3218c320f39786c4fcf276f46ce7d346.webp">
+												</a>
+											</td>
+											<td class="min-w-0 self-stretch flex">
+												<a class="flex items-center gap-x-2 lg:gap-x-3 no-underline capitalize transition-all ml-[-54px] pl-[49px] h-full duration-300 text-white hover:text-accent max-sm:pl-[41px] min-w-0" href="#">
+													<h3 class="truncate">dorados</h3>
+												</a>
+											</td>
+											<td>42</td>
+											<td>15</td>
+											<td>3</td>
+											<td>87</td>
+											<td>230</td>
+											<td>37</td>
+											<td>44</td>
+											<td>.457</td>
+											<td>12.5</td>
+											<td class="text-red-400">-20</td>
+										</tr>
+										<tr class="border-b-2 border-white uppercase items-center font-bold text-16 sm:text-[18px] gap-x-3.5 text-center py-2 grid grid-cols-[50px_40px_100px_repeat(10,minmax(50px,0.5fr))] sm:grid-cols-[50px_40px_minmax(120px,1.5fr)_repeat(10,minmax(50px,0.5fr))]">
+											<td class="self-stretch flex justify-center items-center sticky left-0 max-lg:after:content-[''] max-lg:after:absolute max-lg:after:top-0 max-lg:after:left-0 max-lg:after:w-full max-lg:after:h-full max-lg:after:bg-[#011f47] max-lg:after:z-[-1]">9</td>
+											<td class="min-w-0 sticky left-[64px] max-sm:after:w-[55px] max-lg:after:content-[''] max-lg:after:absolute max-lg:after:top-0 max-lg:after:left-[-14px] max-lg:after:w-[calc(100%+24px)] max-lg:after:h-full max-lg:after:bg-[#011f47] max-lg:after:z-[-1]">
+												<a href="#" class="flex items-center gap-x-2 lg:gap-x-3 no-underline capitalize transition-all duration-300 text-white hover:text-accent">
+													<img class="w-10 max-sm:w-8 aspect-[1] object-contain" src="./assets/img/ea6c6c0f7f80378060d31415bf573d94.webp">
+												</a>
+											</td>
+											<td class="min-w-0 self-stretch flex">
+												<a class="flex items-center gap-x-2 lg:gap-x-3 no-underline capitalize transition-all ml-[-54px] pl-[49px] h-full duration-300 text-white hover:text-accent max-sm:pl-[41px] min-w-0" href="#">
+													<h3 class="truncate">caliente</h3>
+												</a>
+											</td>
+											<td>42</td>
+											<td>15</td>
+											<td>3</td>
+											<td>87</td>
+											<td>230</td>
+											<td>35</td>
+											<td>48</td>
+											<td>.422</td>
+											<td>12.5</td>
+											<td class="text-red-400">-30</td>
+										</tr>
+										<tr class="border-b-2 border-white uppercase items-center font-bold text-16 sm:text-[18px] gap-x-3.5 text-center py-2 grid grid-cols-[50px_40px_100px_repeat(10,minmax(50px,0.5fr))] sm:grid-cols-[50px_40px_minmax(120px,1.5fr)_repeat(10,minmax(50px,0.5fr))]">
+											<td class="self-stretch flex justify-center items-center sticky left-0 max-lg:after:content-[''] max-lg:after:absolute max-lg:after:top-0 max-lg:after:left-0 max-lg:after:w-full max-lg:after:h-full max-lg:after:bg-[#011f47] max-lg:after:z-[-1]">10</td>
+											<td class="min-w-0 sticky left-[64px] max-sm:after:w-[55px] max-lg:after:content-[''] max-lg:after:absolute max-lg:after:top-0 max-lg:after:left-[-14px] max-lg:after:w-[calc(100%+24px)] max-lg:after:h-full max-lg:after:bg-[#011f47] max-lg:after:z-[-1]">
+												<a href="#" class="flex items-center gap-x-2 lg:gap-x-3 no-underline capitalize transition-all duration-300 text-white hover:text-accent">
+													<img class="w-10 max-sm:w-8 aspect-[1] object-contain" src="./assets/img/92736c371ed494682f5cc5533b65bbaf.webp">
+												</a>
+											</td>
+											<td class="min-w-0 self-stretch flex">
+												<a class="flex items-center gap-x-2 lg:gap-x-3 no-underline capitalize transition-all ml-[-54px] pl-[49px] h-full duration-300 text-white hover:text-accent max-sm:pl-[41px] min-w-0" href="#">
+													<h3 class="truncate">rieleros</h3>
+												</a>
+											</td>
+											<td>42</td>
+											<td>15</td>
+											<td>3</td>
+											<td>87</td>
+											<td>230</td>
+											<td>32</td>
+											<td>48</td>
+											<td>.400</td>
+											<td>17.0</td>
+											<td class="text-red-400">-40</td>
+										</tr>
+									</tbody>
+								</table>
+								<div class="flex justify-center">
+									<a class="bg-white px-6 py-1.5 border-[#0816291a] border-[5px] hover:border-accent rounded-xl max-mobile:w-full font-bold text-[#0A2240] text-lg no-underline uppercase transition-colors duration-300 text-center" href="#">load more</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</main>
+			<footer data-fls-footer="">
+				<div class="container flex max-md:gap-y-3.5 items-center md:items-start md:justify-center gap-x-13 py-[30px] max-md:flex-col max-md:pb-[20px]">
+					<a class="transition-all hover:scale-[1.03] w-[80px] h-[80px] will-change-transform shrink-0" href="#">
+						<img class="w-full h-full object-contain" src="./assets/img/85d5496ce338b5bf29c10413c57ee365.webp">
+					</a>
+					<div data-fls-spollers="767.98" class="md:grid md:grid-cols-3 text-white md:basis-[800px] gap-x-7">
+						<details class="max-md:not-last:mb-2">
+							<summary class="text-lg uppercase font-semibold max-md:text-[20px]">COMMERCIAL</summary>
+							<div>
+								<ul class="flex flex-col gap-y-[8px] list-none pt-2">
+									<li>
+										<a href="#" class="hover:text-accent duration-300 text-base transition-all font-semibold text-white">Sponsors and Partners</a>
+									</li>
+									<li>
+										<a href="#" class="hover:text-accent duration-300 text-base transition-all font-semibold text-white">Official Stores</a>
+									</li>
+									<li>
+										<a href="#" class="hover:text-accent duration-300 text-base transition-all font-semibold text-white">Brand Licensing</a>
+									</li>
+									<li>
+										<a href="#" class="hover:text-accent duration-300 text-base transition-all font-semibold text-white">Cruzeiro Schools</a>
+									</li>
+								</ul>
+							</div>
+						</details>
+						<details class="max-md:not-last:mb-2">
+							<summary class="text-lg uppercase font-semibold max-md:text-[20px]">OFFICIAL CHANNELS</summary>
+							<div>
+								<ul class="flex flex-col gap-y-[8px] list-none pt-2">
+									<li>
+										<a href="#" class="hover:text-accent duration-300 text-base transition-all font-semibold text-white">Instagram</a>
+									</li>
+									<li>
+										<a href="#" class="hover:text-accent duration-300 text-base transition-all font-semibold text-white">Facebook</a>
+									</li>
+									<li>
+										<a href="#" class="hover:text-accent duration-300 text-base transition-all font-semibold text-white">YouTube</a>
+									</li>
+									<li>
+										<a href="#" class="hover:text-accent duration-300 text-base transition-all font-semibold text-white">Tik Tok</a>
+									</li>
+									<li>
+										<a href="#" class="hover:text-accent duration-300 text-base transition-all font-semibold text-white">Flickr</a>
+									</li>
+								</ul>
+							</div>
+						</details>
+						<details class="max-md:not-last:mb-2">
+							<summary class="text-lg uppercase font-semibold max-md:text-[20px]">TRANSPARENCY</summary>
+							<div>
+								<ul class="flex flex-col gap-y-[8px] list-none pt-2">
+									<li>
+										<a href="#" class="hover:text-accent duration-300 text-base transition-all font-semibold text-white">Articles of Association</a>
+									</li>
+									<li>
+										<a href="#" class="hover:text-accent duration-300 text-base transition-all font-semibold text-white">Code of
+								Ethics</a>
+									</li>
+									<li>
+										<a href="#" class="hover:text-accent duration-300 text-base transition-all font-semibold text-white">Minutes</a>
+									</li>
+									<li>
+										<a href="#" class="hover:text-accent duration-300 text-base transition-all font-semibold text-white">Financial</a>
+									</li>
+									<li>
+										<a href="privacy-policy.html" class="hover:text-accent duration-300 text-base transition-all font-semibold text-white">Privacy
+								Policy</a>
+									</li>
+									<li>
+										<a href="#" class="hover:text-accent duration-300 text-base transition-all font-semibold text-white">Fan Code of Conduct</a>
+									</li>
+									<li>
+										<a href="#" class="hover:text-accent duration-300 text-base transition-all font-semibold text-white">Salary Transparency</a>
+									</li>
+								</ul>
+							</div>
+						</details>
+					</div>
+				</div>
+				<div class="text-sm text-center font-semibold text-white pb-6">© 2025 Cruzeiro SAF. All rights reserved.</div>
+			</footer>
+			<a data-fls-gotop="" data-top="70" data-fls-scrollto="header" aria-label="scroll to top of page" href="#">
+				<img alt="Image" src="./assets/img/arrow.webp">
+			</a>
+		</div>
+	</body>
+</html>
